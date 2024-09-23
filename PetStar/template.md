@@ -2,6 +2,10 @@
 
 ## **Sistema de Gerenciamento de Pet Shop**
 
+### **Descrição:**
+
+Plataforma digital que simplifique a administração de cuidados e consultas para pets, ligando proprietários de animais a profissionais como tosadores e cuidadores. A plataforma possibilitará agendamentos, compras de produtos, suporte ao usuário e adoção de animais.
+
 ### **Histórias de Usuário**
 
 ---
@@ -32,11 +36,5 @@
 ### 🐾 **HU-5: Calendário Integrado**
 - **Como cliente**, quero visualizar os horários disponíveis no calendário para escolher o melhor momento para agendar os serviços.
 - **Como profissional**, quero um calendário integrado para gerenciar meus horários e evitar conflitos de agenda.
-
----
-
-### 🐾 **HU-6: Notificações e Lembretes**
-- **Como cliente**, quero receber notificações (podendo ser via Whatsapp) e lembretes dos meus agendamentos para não esquecer dos compromissos do meu pet.
-- **Como profissional**, quero receber notificações (podendo ser via Whatsapp) e lembretes dos serviços agendados a serem cumpridos.
 
 ---
