@@ -38,3 +38,30 @@ Plataforma digital que simplifique a administração de cuidados e consultas par
 - **Como profissional**, quero um calendário integrado para gerenciar meus horários e evitar conflitos de agenda.
 
 ---
+
+### 🐾 **HU-6: Avaliação de Serviços**
+- **Como cliente**, quero avaliar os serviços prestados pelos profissionais para ajudar outros usuários a escolherem o melhor atendimento para seus animais de estimação.
+- **Como profissional**, quero visualizar e responder às avaliações para melhorar a confiança dos clientes e otimizar meus serviços.
+
+---
+
+### 🐾 **HU-7: Histórico de Serviços**
+- **Como cliente**, quero acessar o histórico de serviços realizados no meu pet para acompanhar sua rotina de cuidados.
+- **Como profissional**, quero visualizar o histórico de serviços prestados a cada cliente para oferecer um atendimento personalizado.
+
+---
+
+### 🐾 **HU-8: Notificações automáticas**
+- **Como cliente**, quero receber notificações por email ou SMS sobre meus agendamentos e lembretes de serviços futuros para me manter informado.
+- **Como profissional**, quero ser notificado quando um cliente agendar, cancelar ou modificar um serviço, para que eu possa ajustar minha agenda.
+
+---
+
+### 🐾 **HU-9: Filtro de pesquisa para profissionais**
+- **Como cliente**, quero usar filtros de pesquisa (localização, avaliação, tipo de serviço) para encontrar o profissional ideal para as necessidades do meu pet de forma rápida e eficiente.
+
+---
+
+### 🐾 **HU-10: Sistema de pagamento online**
+- **Como cliente**, quero realizar o pagamento dos serviços de forma online e com segurança para facilitar a contratação dos serviços.
+- **Como profissional**, quero que o pagamento seja integrado à plataforma para que eu possa receber diretamente e de forma segura.
