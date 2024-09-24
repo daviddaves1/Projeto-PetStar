@@ -12,7 +12,7 @@ Plataforma digital que simplifique a administração de cuidados e consultas par
 
 ### 🐾 **HU-1: Cadastro e Login**
 - **Como cliente**, quero me cadastrar na plataforma para poder acessar todos os serviços disponíveis.
-- **Como um profissional de cuidados com pets**, quero me cadastrar na plataforma para oferecer meus serviços e gerenciar meus clientes.
+- **Como um profissional**, quero me cadastrar na plataforma para oferecer meus serviços e gerenciar meus clientes.
 
 ---
 
