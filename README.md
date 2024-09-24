@@ -22,8 +22,10 @@ Atualmente, muitos donos de pets enfrentam dificuldades ao interagir com pet sho
 ### Grupo
 Este projeto será desenvolvido pelos componentes do grupo 9: 
 
-|202403064|CLAUDIO ELIZIARIO SILVA FERREIRA|[<usuario_github>](https://github.com/claudioferreira23)|
-|202403067|DAVID DAVES FERREIRA PINTO|[<usuario_github>](https://github.com/daviddaves1)|
-|202403068|ENZO DE OLIVEIRA MACHADO|[<usuario_github>](https://github.com/EnzoMachad0)|
-|202403090|RAFAEL FERNANDES DA SILVA|[<usuario_github>](https://github.com/RafaelFernandes1112)|
-|202403091|RODRIGO LUIZ FERREIRA RAMOS|[<usuario_github>](https://github.com/rodrigoluizf)|
+| Matrícula  | Nome                              | Usuário Git                                                  |
+|------------|-----------------------------------|--------------------------------------------------------------|
+| 202403064  | CLAUDIO ELIZIARIO SILVA FERREIRA  | [claudioferreira23](https://github.com/claudioferreira23)    |
+| 202403067  | DAVID DAVES FERREIRA PINTO        | [daviddaves1](https://github.com/daviddaves1)                |
+| 202403068  | ENZO DE OLIVEIRA MACHADO          | [EnzoMachad0](https://github.com/EnzoMachad0)                |
+| 202403090  | RAFAEL FERNANDES DA SILVA         | [RafaelFernandes1112](https://github.com/RafaelFernandes1112)|
+| 202403091  | RODRIGO LUIZ FERREIRA RAMOS       | [rodrigoluizf](https://github.com/rodrigoluizf)              |
