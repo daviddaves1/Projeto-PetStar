@@ -65,3 +65,36 @@ Plataforma digital que simplifique a administração de cuidados e consultas par
 ### 🐾 **HU-10: Sistema de pagamento online**
 - **Como cliente**, quero realizar o pagamento dos serviços de forma online e com segurança para facilitar a contratação dos serviços.
 - **Como profissional**, quero que o pagamento seja integrado à plataforma para que eu possa receber diretamente e de forma segura.
+
+---
+
+### 🐾 **HU-11: Perfil do Pet**
+- **Como cliente**, quero criar e editar um perfil para cada um dos meus pets, onde possa incluir informações como idade, raça, condições de saúde e preferências, para que os profissionais possam oferecer um serviço mais adequado.
+- **Como profissional**, quero visualizar os perfis dos pets dos clientes para conhecer melhor suas necessidades e oferecer um atendimento personalizado.
+
+---
+
+### 🐾 **HU-12: Cancelamento e Reagendamento**
+- **Como cliente**, quero ter a opção de cancelar ou reagendar serviços de forma simples e rápida, para adaptar os horários conforme minha necessidade.
+- **Como profissional**, quero ser notificado imediatamente quando um cliente cancelar ou reagendar um serviço, para ajustar minha agenda de trabalho de forma eficiente.
+
+---
+
+### 🐾 **HU-13: Sistema de Suporte e Ajuda**
+- **Como cliente**, quero acessar um sistema de suporte dentro da plataforma, onde posso enviar dúvidas ou problemas para a equipe de atendimento e receber suporte em tempo hábil.
+- **Como profissional**, quero ter acesso a um suporte específico para questões relacionadas aos meus serviços ou pagamentos, para resolver problemas rapidamente.
+
+---
+
+### 🐾 **HU-14: Promoções e Ofertas Personalizadas**
+- **Como cliente**, quero receber notificações de promoções e ofertas especiais de serviços para que eu possa economizar ao cuidar do meu pet.
+- **Como profissional**, quero criar promoções e ofertas para atrair mais clientes, especialmente em períodos de baixa demanda.
+
+---
+
+### 🐾 **HU-15: Relatórios e Estatísticas**
+- **Como profissional**, quero acessar relatórios e estatísticas dos serviços prestados, como número de clientes atendidos, tipos de serviços mais realizados e rendimento mensal, para gerenciar melhor o meu negócio.
+- **Como administrador**, quero visualizar relatórios de uso da plataforma e monitorar a performance de clientes e profissionais para tomar decisões estratégicas e melhorar os serviços oferecidos.
+
+---
+
