@@ -52,12 +52,12 @@ Plataforma digital que simplifique a administração de cuidados e consultas par
 ---
 
 ### 🐾 **HU-8: Notificações automáticas**
-- **Como cliente**, quero receber notificações por email ou SMS sobre meus agendamentos e lembretes de serviços futuros para me manter informado.
+- **Como cliente**, quero receber notificações por whatsapp sobre meus agendamentos e lembretes de serviços futuros para me manter informado.
 - **Como profissional**, quero ser notificado quando um cliente agendar, cancelar ou modificar um serviço, para que eu possa ajustar minha agenda.
 
 ---
 
-### 🐾 **HU-9: Filtro de pesquisa para profissionais**
+### 🐾 **HU-9: Filtro de pesquisa**
 - **Como cliente**, quero usar filtros de pesquisa (localização, avaliação, tipo de serviço) para encontrar o profissional ideal para as necessidades do meu pet de forma rápida e eficiente.
 
 ---
