@@ -113,3 +113,12 @@ Plataforma digital que simplifique a administração de cuidados e consultas par
 ### 🐾 **HU-18: Lista de desejos**
 - **Como cliente**, quero adicionar produtos e serviços em uma lista de desejos, para me organizar melhor e acompanhar produtos e serviços que planejo contratar no futuro. 
 
+### 🐾 **HU-19: Recuperação de senha**
+- **Como cliente**
+- **Quero** conseguir trocar minha senha quando esquecer
+- **Para** que eu não precise criar uma nova conta.   
+
+### 🐾 **HU-20: Troca de número de celular**
+- **Como cliente**
+- **Quero** conseguir trocar o meu número de celular cadastrado
+- **Para** que minha informações fiquem atualizadas.
