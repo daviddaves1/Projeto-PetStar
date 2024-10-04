@@ -22,10 +22,22 @@ Atualmente, muitos donos de pets enfrentam dificuldades ao interagir com pet sho
 ### Grupo
 Este projeto será desenvolvido pelos componentes do grupo 9: 
 
-| Matrícula  | Nome                              | Usuário Git                                                  |
-|------------|-----------------------------------|--------------------------------------------------------------|
-| 202403064  | CLAUDIO ELIZIARIO SILVA FERREIRA  | [claudioferreira23](https://github.com/claudioferreira23)    |
-| 202403067  | DAVID DAVES FERREIRA PINTO        | [daviddaves1](https://github.com/daviddaves1)                |
-| 202403068  | ENZO DE OLIVEIRA MACHADO          | [EnzoMachad0](https://github.com/EnzoMachad0)                |
-| 202403090  | RAFAEL FERNANDES DA SILVA         | [RafaelFernandes1112](https://github.com/RafaelFernandes1112)|
-| 202403091  | RODRIGO LUIZ FERREIRA RAMOS       | [rodrigoluizf](https://github.com/rodrigoluizf)              |
+| 📑 Matrícula  | 📝 Nome Completo                    | 👤 Usuário Git                                                |
+|---------------|--------------------------------------|---------------------------------------------------------------|
+| 202403064     | CLAUDIO ELIZIARIO SILVA FERREIRA     | [claudioferreira23](https://github.com/claudioferreira23)     |
+| 202403067     | DAVID DAVES FERREIRA PINTO           | [daviddaves1](https://github.com/daviddaves1)                 |
+| 202403068     | ENZO DE OLIVEIRA MACHADO             | [EnzoMachad0](https://github.com/EnzoMachad0)                 |
+| 202403090     | RAFAEL FERNANDES DA SILVA            | [RafaelFernandes1112](https://github.com/RafaelFernandes1112) | 
+| 202403091     | RODRIGO LUIZ FERREIRA RAMOS          | [rodrigoluizf](https://github.com/rodrigoluizf)               |
+
+### Backlog do Produto
+
+- 1. RF001 - <O sistema terá cadastro para clientes, profissionais e administradores.>.
+- 2. RF002 - <O sistema deve possuir um perfil de usuário com opções de personalização>.
+- 3. RF003 - <O software irá possuir perfil do profissional com especializações e avaliações>.
+- 4. RF004 - <Na plataforma haverá uma opção destinada ao cliente para agendamento de serviços com cuidado animal>.
+- 5. RF005 - <O sistema terá calendário integrado para visualização de horários disponíveis, podendo ser aceessado tanto para o(a) cliente, quanto para o(a) profissional>.
+- 6. RF006 - <O software possuirá notificações e lembretes de agendamentos na plataforma e via Whatsapp, onde serão destinados para clientes e profissionais>.
+- 7. RF007 - <O sistema em si terá uma área de compras para produtos de lazer e cuidados animais>.
+- 8. RF008 - <O software irá possuir uma área para carrinho de compras e opções de pagamento>.
+- 9. RF009 - <Na plataforma haverá opção dedicada à adoção de animais de rua tratados por profissionais>.
