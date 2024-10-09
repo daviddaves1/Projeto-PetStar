@@ -108,6 +108,8 @@ Plataforma digital que simplifique a administração de cuidados e consultas par
 - **Como cliente**, quero que a plataforma me mostre serviços e profissionais baseados na minha localização, para que eu possa ter mais conforto e ficar ciente das opções próximas de onde eu moro.
 - **Como profissional**,quero que os clientes possam me encontrar facilmente a partir da minha localização, para aumentar as minhas chances de ser contratado por pessoas da minha região.
 
+---
+
 ### 🐾 **HU-18: Lista de desejos**
 - **Como cliente**, quero adicionar produtos e serviços em uma lista de desejos, para me organizar melhor e acompanhar produtos e serviços que planejo contratar no futuro.
 
