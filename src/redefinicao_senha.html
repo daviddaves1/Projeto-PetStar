@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redefinição de Senha</title>
     <link rel="stylesheet" href="routes/style/redefinicao_senha.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.btn-redefinir').addEventListener('click', function(event) {
+                const email = document.getElementById('email').value;
+                const codigoInputs = document.querySelectorAll('.codigo-inputs input');
+                const codigo = Array.from(codigoInputs).map(input => input.value).join('');
+
+                if (email === '' || codigo.length < 6) { // Verifica se os campos estão preenchidos
+                    alert('Por favor, preencha todos os campos obrigatórios.');
+                    event.preventDefault(); // Impede o redirecionamento
+                } else {
+                    window.location.href = 'redefinir_senha.html'; // Redireciona se tudo estiver correto
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="container">
@@ -14,7 +30,10 @@
             
             <form>
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                <div class="email-container"> <!-- Adiciona um contêiner para o campo de email e a imagem -->
+                    <img src="assets/email.png" alt="Imagem do Email">
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
 
                 <button type="button" class="btn">Enviar código de recuperação</button>
 
@@ -28,7 +47,7 @@
                     <input type="text" maxlength="1" required>
                 </div>
 
-                <button type="submit" class="btn">Redefinir senha</button>
+                <button type="button" class="btn btn-redefinir">Redefinir senha</button>
             </form>
         </div>
     </div>
