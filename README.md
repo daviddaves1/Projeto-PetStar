@@ -47,4 +47,4 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 - **13. RF013** - Na plataforma deve haver uma área de análises de desempenho dos profissionais e administradores, sendo esta disponível somente para administradores e profissionais.
 - **14. RF014** - O sistema deve permitir a configuração inicial dos funcionários, incluindo a definição dos administradores e profissionais, sendo essa opção estando disponível apenas para  administradores.
 - **15. RF015** - No software, tem que haver uma opção para exclusão da conta pessoal, estando essa disponível somente aos clientes.
-- **16. RF016** -  No software deverá estar disponível a a opção de desativação das contas dos profissionais e administradores, porém estará concedida apenas aos administradores.
+- **16. RF016** -  No software deverá estar disponível a opção de desativação das contas dos profissionais e administradores, porém estará concedida apenas aos administradores.
