@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinição de Senha</title>
+    <link rel="stylesheet" href="routes/style/redefinicao_senha.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.btn-redefinir').addEventListener('click', function(event) {
+                const email = document.getElementById('email').value;
+                const codigoInputs = document.querySelectorAll('.codigo-inputs input');
+                const codigo = Array.from(codigoInputs).map(input => input.value).join('');
+
+                if (email === '' || codigo.length < 6) { // Verifica se os campos estão preenchidos
+                    alert('Por favor, preencha todos os campos obrigatórios.');
+                    event.preventDefault(); // Impede o redirecionamento
+                } else {
+                    window.location.href = 'redefinir_senha.html'; // Redireciona se tudo estiver correto
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>REDEFINIÇÃO DE SENHA</h2>
+            <p>Informe um email e enviaremos um código para recuperação da sua senha</p>
+            
+            <form>
+                <label for="email">Email</label>
+                <div class="email-container"> <!-- Adiciona um contêiner para o campo de email e a imagem -->
+                    <img src="assets/email.png" alt="Imagem do Email">
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+
+                <button type="button" class="btn">Enviar código de recuperação</button>
+
+                <label for="codigo">Digite o código enviado para o seu email</label>
+                <div class="codigo-inputs">
+                    <input type="text" maxlength="1" required>
+                    <input type="text" maxlength="1" required>
+                    <input type="text" maxlength="1" required>
+                    <input type="text" maxlength="1" required>
+                    <input type="text" maxlength="1" required>
+                    <input type="text" maxlength="1" required>
+                </div>
+
+                <button type="button" class="btn btn-redefinir">Redefinir senha</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
