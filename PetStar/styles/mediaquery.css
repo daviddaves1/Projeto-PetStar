@@ -12,10 +12,6 @@
         --cor6: rgb(99, 74, 0);
     }
 
-    body{
-        background-image: linear-gradient(to bottom, var(--cor5), var(--cor4));
-    }
-
     #login{
         width: 90vw;
         height: 410px;
@@ -56,10 +52,6 @@
         --cor4: #b9b922;
         --cor5: rgb(183, 255, 0); 
         --cor6: rgb(99, 74, 0);
-    }
-
-    body{
-        background-image: linear-gradient(to bottom, var(--cor5), var(--cor4));
     }
 
     #login{

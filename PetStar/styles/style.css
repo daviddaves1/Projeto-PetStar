@@ -19,15 +19,81 @@
 }
 
 body, html{
-    background-color: var(--cor5);
     height: 100vh;
     width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--cor0);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#img-petstar-small {
+    width: 100px;
+    height: auto;
+    display: inline-block;
+}
+
+header > h1{
+    margin-bottom: 1em;
+    text-align: center;
+    color: white;
+    display: inline-block;
+}
+
+header > p{
+    margin: 0em 1.5em 0.8em 1.5em;
+    text-align: center;
+    color: white;
+    display: block;
+    font-weight: bold;
+    font-size: 1.08em;
+}
+
+nav {
+    background-color: var(--cor0);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.403);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 45px;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin: 0 16px;
+    font-weight: bold;
+    font-size: 1.07em;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav > a:hover {
+    background-color: yellow;
+    color: black;
 }
 
 main{
     height: 100vh;
     width: 100vw;
     position: relative;
+}
+
+.fundo-main{
+    background-image: linear-gradient(to bottom, var(--cor5), var(--cor4));
 }
 
 #login{
@@ -66,6 +132,10 @@ main{
 #formulario > p{
     font-size: 0.9em;
     margin-bottom: 10px;
+}
+
+footer {
+    
 }
 
 form > .campo{
@@ -153,8 +223,11 @@ form > .botao > span{
     transform: translate(5%, 25%);
 }
 
-.corpo-site {
-    background-color: white;
+.corpo-site{
+    background: url('../imagens/img2.jpg') no-repeat center center;
+}
+
+.corpo-site > main {
     height: 100vh;
     width: 100vw;
     position: relative;
@@ -221,3 +294,31 @@ form > .botao > span{
     transform: scale(1.02);
 }
 
+.main-initial-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}
+
+.main-initial-page > h1,
+.main-initial-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-initial-page > p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.main-initial-page > ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.main-initial-page > ul > li {
+    margin-bottom: 10px;
+}
