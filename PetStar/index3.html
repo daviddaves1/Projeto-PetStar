@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Serviço</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mediaquery.css">
+</head>
+<body>
+    <main class="corpo-site">
+        <h1>Olá, o que gostaria de fazer?</h1>
+
+        <section id="agendar-servico">
+            <p>Agendar um Serviço</p>
+            <form id="form-agendamento" action="processa_agendamento.php" method="post">
+                <label for="servico">Escolha o serviço:</label>
+                <select id="servico" name="servico">
+                    <option value="tosa">Tosa</option>
+                    <option value="banho">Banho</option>
+                    <option value="passeio">Passeio</option>
+                    <option value="natacao">Natação</option>
+                </select>
+                <label for="data">Escolha a data:</label>
+                <input type="date" id="data" name="data">
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
