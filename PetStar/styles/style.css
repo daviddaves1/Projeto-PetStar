@@ -21,10 +21,6 @@
 body, html{
     height: 100vh;
     width: 100vw;
-
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 header {
@@ -96,7 +92,7 @@ main{
     background-image: linear-gradient(to bottom, var(--cor5), var(--cor4));
 }
 
-#login{
+.autenticacao-usuario{
     background-color: rgba(255, 255, 255, 0.947);
     width: 320px;
     height:610px;
@@ -111,14 +107,14 @@ main{
     transform: translate(-50%, -50%);
 }
 
-#login > #imagem{
+.autenticacao-usuario > #imagem{
     background: var(--cor0) url('../imagens/img1.png') no-repeat center center;
     height: 255px;
     background-size: cover;
     display: block;
 }
 
-#login > #formulario{
+.autenticacao-usuario > #formulario{
     display: block;
     padding: 10px;
     text-align: justify;
@@ -135,7 +131,19 @@ main{
 }
 
 footer {
-    
+    background-color: var(--cor0);
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 1em;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+}
+
+footer > p {
+    color: white;
+    margin-bottom: 14px;
 }
 
 form > .campo{
@@ -223,16 +231,6 @@ form > .botao > span{
     transform: translate(5%, 25%);
 }
 
-.corpo-site{
-    background: url('../imagens/img2.jpg') no-repeat center center;
-}
-
-.corpo-site > main {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-}
-
 #agendar-servico {
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor7));
     width: 80%;
@@ -294,7 +292,7 @@ form > .botao > span{
     transform: scale(1.02);
 }
 
-.main-initial-page {
+.main-page {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -302,23 +300,23 @@ form > .botao > span{
     font-family: Arial, sans-serif;
 }
 
-.main-initial-page > h1,
-.main-initial-page h2 {
+.main-page > h1,
+.main-page h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.main-initial-page > p {
+.main-page > p {
     text-align: justify;
     margin-bottom: 20px;
 }
 
-.main-initial-page > ul {
+.main-page > ul {
     list-style-type: disc;
     padding-left: 40px;
     margin-bottom: 20px;
 }
 
-.main-initial-page > ul > li {
+.main-page > ul > li {
     margin-bottom: 10px;
 }
