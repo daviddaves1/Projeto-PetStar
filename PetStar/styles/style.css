@@ -5,10 +5,9 @@
     --cor1: #098000;
     --cor2: #cf9100;
     --cor3: #1119AA;
-    --cor4: #b9b922;
+    --cor4: #8e8e00;
     --cor5: rgb(183, 255, 0); 
     --cor6: rgb(99, 74, 0);
-    --cor7: rgb(114, 175, 0);
 }
 
 *{
@@ -21,6 +20,12 @@
 body, html{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -28,10 +33,11 @@ header {
     align-items: center;
     padding: 10px;
     background-color: var(--cor0);
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor0));
 
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-flow: column nowrap;
     text-align: center;
 }
 
@@ -72,13 +78,13 @@ nav > a {
     margin: 0 16px;
     font-weight: bold;
     font-size: 1.07em;
-    padding: 6px 12px;
-    border-radius: 5px;
+    padding: 8px 16px;
+    border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 nav > a:hover {
-    background-color: yellow;
+    background-color: var(--cor5);
     color: black;
 }
 
@@ -95,7 +101,7 @@ main{
 .autenticacao-usuario{
     background-color: rgba(255, 255, 255, 0.947);
     width: 320px;
-    height:610px;
+    height: 610px;
     border-radius: 15px;
     position: absolute;
     top: 50%;
@@ -134,16 +140,31 @@ footer {
     background-color: var(--cor0);
     color: white;
     text-align: center;
-    font-size: 1.2em;
-    padding: 1em;
-    bottom: 0;
+    font-size: 1.1em;
+    top: 100%;
     width: 100%;
-    position: relative;
+    margin: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
 }
 
 footer > p {
     color: white;
     margin-bottom: 14px;
+    font-weight: 500;
+}
+
+footer > p > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
 }
 
 form > .campo{
@@ -154,6 +175,7 @@ form > .campo{
     border-radius: 8px;
     margin: 5px 0px;
     border: 2px solid var(--cor2);
+    flex-shrink: 0;
 }
 
 .campo > label{
@@ -232,78 +254,93 @@ form > .botao > span{
 }
 
 #agendar-servico {
-    background-image: linear-gradient(to bottom, var(--cor4), var(--cor7));
+    background: white;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.084);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 3em auto;
     width: 80%;
-    height: 70%;
-    margin: 1em;
-    padding: 1.2em;
-    border-radius: 8px;
+    max-width: 600px;
+    text-align: center;
 }
 
 #agendar-servico > p {
-    text-align: center;
     font-weight: bold;
-    font-size: 19px;
-    margin-bottom: 30px;
-    background-color: var(--cor3);
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
-    width: 100%;
-} 
+    font-size: 1.5em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: var(--cor0);
+}
 
 #agendar-servico > form {
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: left;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+    margin: 2em;
 }
 
 #agendar-servico > form > label {
-    margin: 10px 0;
     font-weight: bold;
+    margin: 10px 0 5px;
 }
 
 #agendar-servico > form > select,
 #agendar-servico > form > input {
-    padding: 0.5em;
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: 80%;
-    margin: 1px 0;
+    margin-bottom: 15px;
+    font-size: 1em;
+    width: 100%;
 }
 
 #agendar-servico > form > button {
-    margin-top: 2em;
-    padding: 0.5em;
+    padding: 10px;
     border-radius: 5px;
     border: none;
+    margin-top: 20px;
+    width: 50%;
+    margin: 1.5em auto;
     background-color: var(--cor0);
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    width: 30%;
-    align-self: center;
     color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
 }
 
 #agendar-servico > form > button:hover {
-    transition: transform 0.3s;
     transform: scale(1.02);
 }
 
+header, nav, .main-page{
+    flex: 0 1 auto;
+}
+
 .main-page {
-    max-width: 800px;
-    margin: 0 auto;
+    min-height: 100vh;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 110px;
     padding: 20px;
     line-height: 1.6;
     font-family: Arial, sans-serif;
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
 }
 
-.main-page > h1,
-.main-page h2 {
-    text-align: center;
+.main-page > h1, .main-page > h2 {
     margin-bottom: 20px;
+}
+
+.main-page > h1{
+    text-align: center;
+}
+
+.main-page > h2{
+    text-align: left;
 }
 
 .main-page > p {
@@ -319,4 +356,8 @@ form > .botao > span{
 
 .main-page > ul > li {
     margin-bottom: 10px;
+}
+
+.main-page > p > strong{
+    text-align: center;
 }
