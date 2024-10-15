@@ -6,7 +6,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #00FF00;
+    background-image: url(/src/assets/fundo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,10 +24,10 @@ body {
 }
 
 .form-box {
-    background-color: #A0B19C;
+    background-color: #FEFAA1;
     padding: 20px 40px;
-    width: 500px;
-    height: 300px;
+    width: 625px;
+    height: 340px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -46,6 +49,20 @@ form {
     align-items: center;
 }
 
+.icon {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+    margin-bottom: 12px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
 input[type="password"] {
     width: 100%;
     padding: 10px;
@@ -55,15 +72,15 @@ input[type="password"] {
 }
 
 .btn {
-    background-color: #00A2E8;
+    background-color: #36320A;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .btn:hover {
-    background-color: #007bb5;
+    background-color: #6a6210;
 }
