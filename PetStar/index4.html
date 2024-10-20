@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Serviço</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mediaquery.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/img2.png" alt="Imagem da PetStar" id="img-petstar-small">
+        <h1>PetStar - Brilho Animal</h1>
+        <p>Tudo aquilo que você sempre quis sobre os Petshops em um único lugar</p>
+    </header>
+    <nav>
+        <a href="#">Início</a>
+        <a href="index4.html">Agendar Serviço</a>
+        <a href="#">Suporte</a>
+    </nav>
+    <main>
+        <section id="agendar-servico">
+            <p>Agendar um Serviço</p>
+            <form id="form-agendamento" action="backend/agendamento-servico.php" method="post">
+                <label for="servico">Escolha o serviço:</label>
+                <select id="servico" name="servico">
+                    <option value="tosa">Tosa</option>
+                    <option value="banho">Banho</option>
+                    <option value="passeio">Passeio</option>
+                    <option value="natacao">Natação</option>
+                </select>
+                <label for="data">Escolha a data:</label>
+                <input type="date" id="data-agendamento-servico" name="data-agendamento-servico">
+                <button type="submit">Agendar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Site Criado por <a href="https://github.com/daviddaves1/ms_20242_g9" target="_blank">Grupo 09</a></p>
+    </footer>
+    
+    <script src="scripts/script.js"></script>
+</body>
+</html>

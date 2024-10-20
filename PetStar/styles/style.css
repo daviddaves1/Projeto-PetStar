@@ -1,0 +1,363 @@
+@charset "utf-8";
+
+:root{
+    --cor0: #113e00;
+    --cor1: #098000;
+    --cor2: #cf9100;
+    --cor3: #1119AA;
+    --cor4: #8e8e00;
+    --cor5: rgb(183, 255, 0); 
+    --cor6: rgb(99, 74, 0);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--cor0);
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor0));
+
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    text-align: center;
+}
+
+#img-petstar-small {
+    width: 100px;
+    height: auto;
+    display: inline-block;
+}
+
+header > h1{
+    margin-bottom: 1em;
+    text-align: center;
+    color: white;
+    display: inline-block;
+}
+
+header > p{
+    margin: 0em 1.5em 0.8em 1.5em;
+    text-align: center;
+    color: white;
+    display: block;
+    font-weight: bold;
+    font-size: 1.08em;
+}
+
+nav {
+    background-color: var(--cor0);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.403);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 45px;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin: 0 16px;
+    font-weight: bold;
+    font-size: 1.07em;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav > a:hover {
+    background-color: var(--cor5);
+    color: black;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.fundo-main{
+    background-image: linear-gradient(to bottom, var(--cor5), var(--cor4));
+}
+
+.autenticacao-usuario{
+    background-color: rgba(255, 255, 255, 0.947);
+    width: 320px;
+    height: 610px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.412);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+}
+
+.autenticacao-usuario > #imagem{
+    background: var(--cor0) url('../imagens/img1.png') no-repeat center center;
+    height: 255px;
+    background-size: cover;
+    display: block;
+}
+
+.autenticacao-usuario > #formulario{
+    display: block;
+    padding: 10px;
+    text-align: justify;
+}
+
+#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#formulario > p{
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: var(--cor0);
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    top: 100%;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+footer > p {
+    color: white;
+    margin-bottom: 14px;
+    font-weight: 500;
+}
+
+footer > p > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
+}
+
+form > .campo{
+    background-color: var(--cor2);
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+    border: 2px solid var(--cor2);
+    flex-shrink: 0;
+}
+
+.campo > label{
+    display: none;
+}
+
+.campo > span{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 4px;
+}
+
+.campo > input{
+    background-color: rgb(237, 233, 254);
+    font-size: 1em;
+    width: calc(100% - 40px);
+    height: 100%;
+    border: none;
+    border-radius: 6px;
+    padding: 4px;
+    transform: translate(40px, -40px);
+}
+
+.campo > input:focus-within{
+    background-color: white;
+    outline: none;
+}
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--cor0);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 9px;
+}
+
+form > input[type=submit]:hover{
+    background-color: var(--cor1);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+form > .botao{
+    display: block;
+    text-align: center;
+    font-size: 0.9em;
+    width: 100%;
+    height: 40px;
+    padding-top: 3px;
+    margin-top: 5px;
+    background-color: white;
+    border: 1px solid var(--cor4);
+    border-radius: 7px;
+    text-decoration: none;
+    color: var(--cor6);
+    font-weight: bold;
+}
+
+form > .botao:hover{
+    background-color: var(--cor4);
+    color: white;
+    transition: 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+form > .botao > span{
+    font-size: 1.5em;
+    transform: translate(5%, 25%);
+}
+
+#agendar-servico {
+    background: white;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.084);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 3em auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+#agendar-servico > p {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    color: var(--cor0);
+}
+
+#agendar-servico > form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: left;
+    margin: 2em;
+}
+
+#agendar-servico > form > label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+#agendar-servico > form > select,
+#agendar-servico > form > input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 1em;
+    width: 100%;
+}
+
+#agendar-servico > form > button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 20px;
+    width: 50%;
+    margin: 1.5em auto;
+    background-color: var(--cor0);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#agendar-servico > form > button:hover {
+    transform: scale(1.02);
+}
+
+header, nav, .main-page{
+    flex: 0 1 auto;
+}
+
+.main-page {
+    min-height: 100vh;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 110px;
+    padding: 20px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+.main-page > h1, .main-page > h2 {
+    margin-bottom: 20px;
+}
+
+.main-page > h1{
+    text-align: center;
+}
+
+.main-page > h2{
+    text-align: left;
+}
+
+.main-page > p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.main-page > ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.main-page > ul > li {
+    margin-bottom: 10px;
+}
+
+.main-page > p > strong{
+    text-align: center;
+}
