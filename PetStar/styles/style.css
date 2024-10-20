@@ -361,3 +361,34 @@ header, nav, .main-page{
 .main-page > p > strong{
     text-align: center;
 }
+
+#carrinho-compras{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#racao, #coleira, #pet-house{
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.432);
+    
+    border-radius: 5px;
+    height: 120px;
+    width: 140px;
+    margin: 3em;
+    position: relative;
+}
+
+#racao{
+    background: url('../imagens/racao.png') center no-repeat scroll;
+    background-size: cover;
+}
+
+#coleira{
+    background: url('../imagens/coleira-dog.jpeg') center no-repeat scroll;
+    background-size: cover;
+}
+
+#pet-house{
+    background: url('../imagens/dog-house.jpeg') center no-repeat scroll;
+    background-size: cover;
+}
