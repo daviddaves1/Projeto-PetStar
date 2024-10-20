@@ -1,8 +1,8 @@
 <?php
 $host = "localhost";
 $dbname = "petstar";
-$user = "postgres"; // Substitua por seu usuário real
-$password = "Infinixlima46#"; // Substitua por sua senha real
+$user = "seu_usuario"; //insira seu usuário do postgreSQL aqui
+$password = "sua_senha"; //insira sua senha do postgreSQL aqui
 
 // Conexão com o PostgreSQL
 $conn = pg_connect("host=$host dbname=$dbname user=$user password=$password");

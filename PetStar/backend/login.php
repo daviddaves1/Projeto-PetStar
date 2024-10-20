@@ -5,8 +5,8 @@ error_reporting(E_ALL);
 
 $host = "localhost";
 $dbname = "petstar";
-$user = "postgres";
-$password = "Infinixlima46#";
+$user = "seu_usuario"; //insira seu usuário do postgreSQL aqui
+$password = "sua_senha"; //insira sua senha do postgreSQL aqui
 
 // Conexão com o PostgreSQL
 $conn = pg_connect("host=$host dbname=$dbname user=$user password=$password");
