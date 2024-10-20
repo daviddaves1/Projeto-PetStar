@@ -23,23 +23,32 @@
             <p>Agendar um Serviço</p>
             <form id="form-agendamento" action="backend/agendamento-servico.php" method="post">
                 <label for="servico">Escolha o serviço:</label>
-                <select id="servico" name="servico">
-                    <option value="tosa">Tosa</option>
-                    <option value="banho">Banho</option>
-                    <option value="passeio">Passeio</option>
-                    <option value="natacao">Natação</option>
+                <select id="servico" name="servico" required>
+                    <option value="" disabled selected>Escolha...</option>
+                    <option value="tosa">✂️ Tosa</option>
+                    <option value="banho">🛁 Banho</option>
+                    <option value="passeio">🌳 Passeio</option>
+                    <option value="natacao">🌊 Natação</option>
                 </select>
-                <label for="data">Escolha a data:</label>
-                <input type="date" id="data-agendamento-servico" name="data-agendamento-servico">
+                <label for="data-agendamento-servico">Escolha a data:</label>
+                <input type="date" id="data-agendamento-servico" name="data-agendamento-servico" required>
                 <button type="submit">Agendar</button>
             </form>
         </section>
     </main>
-
     <footer>
         <p>Site Criado por <a href="https://github.com/daviddaves1/ms_20242_g9" target="_blank">Grupo 09</a></p>
     </footer>
-    
-    <script src="scripts/script.js"></script>
+
+    <!-- <script src="scripts/script.js"></script> -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var dateInput = document.getElementById('data-agendamento-servico');
+
+            // Define a data mínima como a data atual
+            var today = new Date().toISOString().split('T')[0];
+            dateInput.setAttribute('min', today);
+        });
+     </script>
 </body>
 </html>
