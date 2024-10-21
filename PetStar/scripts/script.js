@@ -33,7 +33,7 @@ function atualizarCarrinho() {
 
     carrinho.forEach((item, index) => {
         const li = document.createElement('li');
-        li.innerHTML = `${item.produto}: ${item.quantidade} <button class="botao-remover" onclick="removerDoCarrinho(${index})">Remover</button>`;
+        li.innerHTML = `${item.produto}: ${item.quantidade} <button class="botoes-remover" onclick="removerDoCarrinho(${index})">Remover</button>`;
         listaCarrinho.appendChild(li);
     });
 }
@@ -42,3 +42,21 @@ function removerDoCarrinho(index) {
     carrinho.splice(index, 1);
     atualizarCarrinho();
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    var cpfInput = document.getElementById('cpf-adm');
+    
+    cpfInput.addEventListener('input', function(e) {
+        var value = e.target.value.replace(/\D/g, '');
+
+        if (value.length > 11){
+            value = value.slice(0, 11);
+        }
+
+        value = value.replace(/(\d{3})(\d)/, '$1.$2');
+        value = value.replace(/(\d{3})(\d)/, '$1.$2');
+        value = value.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+        e.target.value = value;
+    });
+});
