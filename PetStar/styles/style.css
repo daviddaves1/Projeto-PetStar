@@ -141,14 +141,13 @@ footer {
     color: white;
     text-align: center;
     font-size: 1.1em;
-    top: 100%;
     width: 100%;
     margin: auto;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70px;
+    padding: 2em;
 }
 
 footer > p {
@@ -157,13 +156,13 @@ footer > p {
     font-weight: 500;
 }
 
-footer > p > a{
+footer > p > a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-footer > p > a:hover{
+footer > p > a:hover {
     text-decoration: underline;
 }
 
@@ -362,33 +361,104 @@ header, nav, .main-page{
     text-align: center;
 }
 
-#carrinho-compras{
+#form-agendamento {
+    background: white;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.084);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 3em auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+#form-agendamento > label,
+#form-agendamento > select,
+#form-agendamento > input,
+#form-agendamento > button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+#form-agendamento > select,
+#form-agendamento > input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+#form-agendamento > button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cor0);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#form-agendamento > button:hover {
+    transform: scale(1.02);
+    background-color: var(--cor1);
+}
+
+#carrinho-compras {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    margin-top: 20px;
 }
 
-#racao, #coleira, #pet-house{
-    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.432);
-    
-    border-radius: 5px;
-    height: 120px;
-    width: 140px;
-    margin: 3em;
-    position: relative;
+#carrinho-compras > p {
+    font-size: 1.5em;
+    color: var(--cor0);
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 1em;
 }
 
-#racao{
-    background: url('../imagens/racao.png') center no-repeat scroll;
-    background-size: cover;
+#carrinho-compras > form > label{
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
-#coleira{
-    background: url('../imagens/coleira-dog.jpeg') center no-repeat scroll;
-    background-size: cover;
+#carrinho {
+    background: white;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.084);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 3em auto;
+    width: 80%;
+    max-width: 600px;
 }
 
-#pet-house{
-    background: url('../imagens/dog-house.jpeg') center no-repeat scroll;
-    background-size: cover;
+#carrinho > h2 {
+    font-size: 1.5em;
+    color: var(--cor0);
+    margin-bottom: 20px;
+}
+
+#lista-carrinho {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.botao-remover {
+    background-color: var(--cor1);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao-remover:hover {
+    background-color: rgb(193, 0, 0);
+    transform: scale(1.02);
 }

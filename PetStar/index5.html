@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendamento de Serviço</title>
+    <title>Carrinho de Compras</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/mediaquery.css">
 </head>
@@ -23,17 +23,23 @@
             <p>Adicionar um produto ao carrinho</p>
             <form id="form-agendamento" action="backend/carrinho-compras.php" method="post">
                 <label for="produto">Escolha um produto:</label>
-                <div id="racao">Ração</div>
-                <div id="coleira">Coleira</div>
-                <div id="pet-house">Casa para Pet</div>
+                <select id="produto" name="produto">
+                    <option value="Ração">🍲 Ração</option>
+                    <option value="Coleira">🐕 Coleira</option>
+                    <option value="Casa para Pet">🏠 Casa para Pet</option>
+                </select>
+                <input type="number" id="quantidade" name="quantidade" min="1" placeholder="Quantidade">
+                <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
             </form>
+            <div id="carrinho">
+                <h2>Seu Carrinho</h2>
+                <ul id="lista-carrinho"></ul>
+            </div>
         </section>
     </main>
-
     <footer>
         <p>Site Criado por <a href="https://github.com/daviddaves1/ms_20242_g9" target="_blank">Grupo 09</a></p>
     </footer>
-    
     <script src="scripts/script.js"></script>
 </body>
 </html>

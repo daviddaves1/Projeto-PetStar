@@ -1,10 +1,6 @@
 <?php
-$host = "localhost";
-$dbname = "petstar";
-$user = "seu_usuario"; //insira seu usuário do postgreSQL aqui
-$password = "sua_senha"; //insira sua senha do postgreSQL aqui
+include 'configuracao.php';
 
-// Conexão com o PostgreSQL
 $conn = pg_connect("host=$host dbname=$dbname user=$user password=$password");
 
 if (!$conn) {
@@ -16,15 +12,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    // Inserção no banco de dados
-    $query = "INSERT INTO usuarios (nome, email, senha) VALUES ($1, $2, $3)";
-    $result = pg_query_params($conn, $query, array($nome, $email, password_hash($senha, PASSWORD_DEFAULT)));
+    // Verificar se o email já está cadastrado
+    $query_email_check = "SELECT * FROM usuarios WHERE email = $1";
+    $result_email_check = pg_query_params($conn, $query_email_check, array($email));
 
-    if ($result) {
-        echo "Conta criada com sucesso!";
+    if (pg_num_rows($result_email_check) > 0) {
+        echo "Email já cadastrado!<br>";
     } else {
-        echo "Erro ao criar conta: " . pg_last_error();
+        $query = "INSERT INTO usuarios (nome, email, senha) VALUES ($1, $2, $3)";
+        $result = pg_query_params($conn, $query, array($nome, $email, password_hash($senha, PASSWORD_DEFAULT)));
+
+        if ($result) {
+            echo "Conta criada com sucesso!<br>";
+        } else {
+            echo "Erro ao criar conta: " . pg_last_error($conn);
+        }
     }
+
     pg_close($conn);
 }
 ?>

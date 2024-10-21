@@ -3,18 +3,12 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-$host = "localhost";
-$dbname = "petstar";
-$user = "seu_usuario"; //insira seu usuário do postgreSQL aqui
-$password = "sua_senha"; //insira sua senha do postgreSQL aqui
+include 'configuracao.php';
 
-// Conexão com o PostgreSQL
 $conn = pg_connect("host=$host dbname=$dbname user=$user password=$password");
 
 if (!$conn) {
     die("Erro de conexão: " . pg_last_error());
-} else {
-    echo "Conexão bem-sucedida!<br>";
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -30,8 +24,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result) {
         echo "Consulta executada com sucesso!<br>";
         $row = pg_fetch_assoc($result);
+
         if ($row) {
             echo "Usuário encontrado!<br>";
+
+            // Verificar senha
             if (password_verify($senha, $row['senha'])) {
                 echo "Login bem-sucedido!";
             } else {
@@ -41,8 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Usuário não encontrado.";
         }
     } else {
-        echo "Erro ao consultar o banco de dados: " . pg_last_error();
+        echo "Erro ao consultar o banco de dados: " . pg_last_error($conn);
     }
+
     pg_close($conn);
 }
 ?>
