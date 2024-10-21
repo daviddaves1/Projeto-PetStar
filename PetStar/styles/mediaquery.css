@@ -13,7 +13,7 @@
     }
     .autenticacao-usuario {
         width: 90vw;
-        height: 410px;
+        height: 450px;
     }
     .autenticacao-usuario > #imagem {
         float: left;
@@ -48,8 +48,8 @@
         --cor6: rgb(99, 74, 0);
     }
     .autenticacao-usuario {
-        width: 950px;
-        height: 450px;
+        width: 70vw;
+        height: 480px;
     }
     .autenticacao-usuario > #imagem {
         float: right;
