@@ -10,15 +10,16 @@
 </head>
 <body>
     <main class="fundo-main">
+        <a href="index.html" class="back-arrow">
+            <span class="material-symbols-outlined">west</span>
+        </a>
         <section class="autenticacao-usuario">
             <div id="imagem">
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <p>
-                    Seja bem-vindo(a) novamente. Faça login para acessar sua conta e configurar seu ambiente.
-                </p>
-                <form action="backend/login.php" method="post" autocomplete="on">
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e configurar seu ambiente.</p>
+                <form action="backend/login-cliente.php" method="post" autocomplete="on">
                     <div class="campo">
                         <span class="material-symbols-outlined">account_circle</span>
                         <input type="email" name="login-email" id="login-email" required maxlength="40" autocomplete="email" placeholder="seu email">
@@ -30,12 +31,14 @@
                         <label for="login-senha">Senha:</label>
                     </div>
                     <input type="submit" value="Entrar">
-                    <a href="#" class="botao">
-                        Esqueci a senha <span class="material-symbols-outlined">mail</span>
-                    </a>
+                    <a href="#" class="botao">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
                 </form>
+                <div id="mensagem-alerta">
+                    <!-- Mensagens de alerta serão exibidas aqui -->
+                </div>
             </div>
         </section>
     </main>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
