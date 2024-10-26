@@ -10,15 +10,16 @@
 </head>
 <body>
     <main class="fundo-main">
+        <a href="index.html" class="back-arrow">
+            <span class="material-symbols-outlined">west</span>
+        </a>
         <section class="autenticacao-usuario">
             <div id="imagem">
             </div>
             <div id="formulario">
                 <h1>Criar Conta</h1>
-                <p>
-                    Seja bem-vindo(a). Crie uma conta para poder usufruir das configurações na plataforma da PetStar.
-                </p>
-                <form action="backend/criar-conta.php" method="post" autocomplete="on">
+                <p>Seja bem-vindo(a). Crie uma conta para poder usufruir das configurações na plataforma da PetStar.</p>
+                <form action="backend/criar-conta-cliente.php" method="post" autocomplete="on">
                     <div class="campo">
                         <span class="material-symbols-outlined">id_card</span>
                         <input type="text" name="nome" id="input-nome" required maxlength="40" autocomplete="name" placeholder="Nome">
@@ -41,8 +42,12 @@
                     </div>
                     <input type="submit" value="Criar Conta">
                 </form>
+                <div id="mensagem-alerta">
+                    <!-- Mensagens de alerta serão exibidas aqui -->
+                </div>
             </div>
         </section>
     </main>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
