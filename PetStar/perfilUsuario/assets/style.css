@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --container-color: #FEFAA1;
+    --font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Para incluir padding e border no cálculo de largura e altura */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../assets/img/fundo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: var(--font-family);
+    font-size: small;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 880px;
+    padding: 20px 30px 45px;
+    margin: 0 auto;
+    background-color: var(--container-color);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 2em;
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    font-size: large;
+    font-family: var(--font-family);
+    flex-grow: 1;
+    text-align: center;
+    max-width: 100%;
+    /* Garante que o cabeçalho não exceda o contêiner */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.botao-voltar {
+    margin: 0;
+    /* Remova margens negativas */
+    display: flex;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 60px; 
+    height: 60px;
+
+}
+
+.botao-voltar img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    transform: translateY(1px)
+}
+
+.header img {
+    margin-top: 4%;
+    width: 20%;
+}
+
+.form {
+    
+    position: relative;
+    display: block;
+    margin-top: 4em;
+    max-width: 880px;
+    width: 100%;
+    align-items: center;
+}
+
+span {
+    margin-left: 5%;
+}
+
+.nome {
+    
+    margin-top: 0.5em;
+    background-color: white;
+    padding: 10px 20px ;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: auto; /* Adicione isso */
+    margin-right: auto; /* Adicione isso */
+    margin-bottom: 1em;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
+
+}
+
+.cpf{
+    display: flex;
+    margin-top: 0.5em;
+    background-color: white;
+    padding: 10px 20px ;
+    border-radius: 8px;
+    width: 45%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 2%;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
+   
+
+}
+
+.cpfLabel {
+    margin-top: 2em;
+}
+
+.telefone{
+    display: flex;
+    margin-top: 0.5em;
+    background-color: white;
+    padding: 10px 20px ;
+    border-radius: 8px;
+    width: 45%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 52.5%;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
+
+    
+}
+
+.telefoneLabel {
+    margin-top: 0.5em;
+    display: block;
+    margin-left: 55%;
+    margin-top: -4.95em;
+}
+
+.email {
+    display: flex;
+    margin-top: 0.7em;
+    background-color: white;
+    padding: 10px 20px ;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
+}
+
+.emailLabel {
+    margin-top: 0.8em;
+    display: block;
+    
+    
+}
+
+.bairro{
+    display: flex;
+    margin-top: 0.5em;
+    background-color: white;
+    padding: 10px 20px ;
+    border-radius: 8px;
+    width: 45%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 2%;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
+    
+}
+
+.bairroLabel{
+    display: block;
+    margin-top:0.8em;
+}
+
+.endereco {
+    
+    margin-top: -2.9em;
+    background-color: white;
+    padding: 10px 20px ;
+    border-radius: 8px;
+    width: 45%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 52.5%;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
+}
+
+.enderecoLabel {
+    position: absolute;
+    display: inline; /* Elemento de linha */
+    margin-top: -4.8em; /* Espaço acima da label */
+    margin-left: 55%; /* Espaço à direita da label */
+}
+
+.AD {
+    background-color: transparent;
+    border: none;
+    margin-left: 87%;
+    cursor: pointer;
+    bottom: -2.5em;
+    position: absolute;
+}
+
+.AD:hover{
+    color: rgb(0, 0, 177);
+}
+
+.AD:active {
+    transform: scale(0.95);
+    background-color: transparent;
+}
+
+.botao-voltar:active {
+    transform: scale(0.95);
+    background-color: transparent;
+}
+
+/* Media Queries para ajustar o layout em telas menores */
+@media (max-width: 600px) {
+    .header {
+        font-size: 1.2em;
+        /* Reduz o tamanho da fonte em telas menores */
+        margin: 0;
+    }
+
+    .botao-voltar {
+        margin-left: 10px;
+        /* Reduz o espaço entre o botão e o header */
+    }
+}
