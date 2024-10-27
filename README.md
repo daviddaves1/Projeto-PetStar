@@ -107,25 +107,27 @@ O nosso planejamento inicial é hospedar nossa aplicação no [Local a definir],
 
 ### Iterações x Atividades
 
-|0|Definição do grupo de trabalho|30/08/2024|05/09/2024|Grupo 09|Concluída|
-|0|Definição do Tema do Trabalho|30/08/2024|05/09/2024|Grupo 09|Concluída|
-|1|Definição do Backlog do produto|03/09/2024|10/09/2024|Grupo 09|Concluída|
-|1|Descrição dos itens do backlog do produto|20/10/2024|28/10/2024|Grupo 09|Em andamento|
-|2|Especificação de Histórias de Usuário|23/10/2024|01/11/2024|Grupo 09|Em andamento|
-|2|Distribuição dos itens do backlog entre as iterações|23/10/2024|01/11/2024|Grupo 09|Programada|
-|3|Definição do modelo arquitetural|23/10/2024|01/11/2024|Grupo 09|Concluída|
-|3|Diagrama de classes dos itens do backlog <1,2>|02/11/2024|09/11/2024|Grupo 09|Programada|
-|3|Diagrama de interação/sequencia dos itens do backlog <1,2>|09/11/2024|15/11/2024|Grupo 09|Desnecessário|
-|3|Projeto de Interfaces gráficas dos itens do backlog <1,2>|04/11/2024|10/11/2024|Grupo 09|Parcialmente concluída|
-|3|Implementação dos itens do backlog <1,2,3>|04/11/2024|10/11/2024|Grupo 09|Parcialmente concluída|
-|4|Diagrama de classes dos itens do backlog <4,5,6>|05/11/2024|11/11/2024|Grupo 09|Programada|
-|4|Diagrama de interação/sequencia dos itens do backlog <4,5,6>|05/11/2024|13/11/2024|Grupo 09|Programada|
-|4|Projeto de Interfaces gráficas dos itens do backlog <4,5,6>|05/11/2024|13/11/2024|Grupo 09|Em andamento|
-|4|Projeto de persistência dos itens do backlog <4,5,6>|05/11/2024|13/11/2024|Grupo 09|Em andamento|
-|4|Implementação dos itens do backlog <4,5,6>|07/11/2024|15/11/2024|Grupo 09|Em andamento|
-|5|Diagrama de classes dos itens do backlog <7,8,9>|07/11/2024|15/11/2024|Grupo 09|Programada|
-|5|Diagrama de interação/sequencia dos itens do backlog <7,8,9>|07/11/2024|15/11/2024|Grupo 09|Programada|
-|5|Projeto de Interfaces gráficas dos itens do backlog <7,8,9>|07/11/2024|15/11/2024|Grupo 09|Programada|
-|5|Projeto de persistência dos itens do backlog <7,8,9>|10/11/2024|17/11/2024|Grupo 09|Programada|
-|5|Implementação dos itens do backlog <7,8,9>|10/11/2024|17/11/2024|Grupo 09|Programada|
-|6|Apresentação do Projeto|18/11/2024|26/11/2024|Grupo 09|Programada|
+| Iteração | Atividade                                               | Início      | Fim        | Responsável | Status                   |
+|----------|---------------------------------------------------------|-------------|------------|-------------|--------------------------|
+| 0        | Definição do grupo de trabalho                          | 30/08/2024  | 05/09/2024 | Grupo 09    | Concluída                |
+| 0        | Definição do Tema do Trabalho                           | 30/08/2024  | 05/09/2024 | Grupo 09    | Concluída                |
+| 1        | Definição do Backlog do produto                         | 03/09/2024  | 10/09/2024 | Grupo 09    | Concluída                |
+| 1        | Descrição dos itens do backlog do produto               | 20/10/2024  | 28/10/2024 | Grupo 09    | Em andamento             |
+| 2        | Especificação de Histórias de Usuário                   | 23/10/2024  | 01/11/2024 | Grupo 09    | Em andamento             |
+| 2        | Distribuição dos itens do backlog entre as iterações    | 23/10/2024  | 01/11/2024 | Grupo 09    | Programada               |
+| 3        | Definição do modelo arquitetural                        | 23/10/2024  | 01/11/2024 | Grupo 09    | Concluída                |
+| 3        | Diagrama de classes dos itens do backlog <1,2>          | 02/11/2024  | 09/11/2024 | Grupo 09    | Programada               |
+| 3        | Diagrama de interação/sequência dos itens do backlog <1,2>| 09/11/2024 | 15/11/2024 | Grupo 09    | Desnecessário            |
+| 3        | Projeto de Interfaces gráficas dos itens do backlog <1,2>| 04/11/2024 | 10/11/2024 | Grupo 09    | Parcialmente concluída   |
+| 3        | Implementação dos itens do backlog <1,2,3>              | 04/11/2024  | 10/11/2024 | Grupo 09    | Parcialmente concluída   |
+| 4        | Diagrama de classes dos itens do backlog <4,5,6>        | 05/11/2024  | 11/11/2024 | Grupo 09    | Programada               |
+| 4        | Diagrama de interação/sequência dos itens do backlog <4,5,6>| 05/11/2024| 13/11/2024 | Grupo 09    | Programada               |
+| 4        | Projeto de Interfaces gráficas dos itens do backlog <4,5,6>| 05/11/2024| 13/11/2024 | Grupo 09    | Em andamento             |
+| 4        | Projeto de persistência dos itens do backlog <4,5,6>    | 05/11/2024  | 13/11/2024 | Grupo 09    | Em andamento             |
+| 4        | Implementação dos itens do backlog <4,5,6>              | 07/11/2024  | 15/11/2024 | Grupo 09    | Em andamento             |
+| 5        | Diagrama de classes dos itens do backlog <7,8,9>        | 07/11/2024  | 15/11/2024 | Grupo 09    | Programada               |
+| 5        | Diagrama de interação/sequência dos itens do backlog <7,8,9>| 07/11/2024| 15/11/2024 | Grupo 09    | Programada               |
+| 5        | Projeto de Interfaces gráficas dos itens do backlog <7,8,9>| 07/11/2024| 15/11/2024 | Grupo 09    | Programada               |
+| 5        | Projeto de persistência dos itens do backlog <7,8,9>    | 10/11/2024  | 17/11/2024 | Grupo 09    | Programada               |
+| 5        | Implementação dos itens do backlog <7,8,9>              | 10/11/2024  | 17/11/2024 | Grupo 09    | Programada               |
+| 6        | Apresentação do Projeto                                 | 18/11/2024  | 26/11/2024 | Grupo 09    | Programada               |
