@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Verificar senha
             if (password_verify($senha, $row['senha'])) {
                 $_SESSION['nome'] = $row['nome']; // Armazenar o nome do usuário na sessão
-                header("Location: ../main-page.php"); // Certifique-se de que a extensão é .php
+                header("Location: ../main-page.php");
                 exit();
             } else {
                 header("Location: ../login-cliente.html?mensagem=Email ou senha incorretos.");
