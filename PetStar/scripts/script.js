@@ -2,11 +2,43 @@ const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
 
 document.addEventListener('DOMContentLoaded', function() {
     carregarCarrinho();
+
     var dateInput = document.getElementById('data-agendamento-servico');
+    var timeInput = document.getElementById('hora-agendamento-servico');
+
     // Define a data mínima como a data atual
     var today = new Date().toISOString().split('T')[0];
     if (dateInput) {
         dateInput.setAttribute('min', today);
+    }
+
+    if (timeInput) {
+        // Limita os horários de agendamento
+        timeInput.addEventListener('input', function() {
+            var selectedTime = timeInput.value;
+            var selectedDate = new Date(dateInput.value);
+            var dayOfWeek = selectedDate.getUTCDay();
+
+            if (dayOfWeek >= 1 && dayOfWeek <= 5) {
+                if (selectedTime < "07:00" || selectedTime > "17:00") {
+                    alert("Os horários de atendimento de segunda a sexta são das 07:00h às 17:00h.");
+                    timeInput.value = "";
+                }
+            }
+
+            if (dayOfWeek === 6) {
+                if (selectedTime < "07:00" || selectedTime > "12:00") {
+                    alert("Os horários de atendimento aos sábados são das 07:00h às 12:00h.");
+                    timeInput.value = "";
+                }
+            }
+
+            if (dayOfWeek === 0) {
+                alert("A PetStar não atende aos domingos. Tente outra data.");
+                dateInput.value = "";
+                timeInput.value = "";
+            }
+        });
     }
 });
 
@@ -101,6 +133,6 @@ function toggleUserMenu() {
         userMenu.style.maxHeight = "0px";
         setTimeout(() => {
             userMenu.style.display = "none";
-        }, 300);
+        }, 300); // Match the duration of the max-height transition
     }
 }

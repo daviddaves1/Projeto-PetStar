@@ -1,5 +1,4 @@
 <?php
-
 include 'configuracao.php';
 
 // Conecta ao servidor PostgreSQL
@@ -15,7 +14,7 @@ if (pg_num_rows($result_check_db) == 0) {
     // Cria o banco de dados "petstar" se não existir
     $query_db = "
     CREATE DATABASE $dbname
-    WITH
+    WITH 
     OWNER = postgres
     ENCODING = 'UTF8'
     LC_COLLATE = 'Portuguese_Brazil.1252'
@@ -32,6 +31,7 @@ if (pg_num_rows($result_check_db) == 0) {
 } else {
     echo "Banco de dados já existe!<br>";
 }
+
 pg_close($conn);
 
 $conn = pg_connect("host=$host dbname=$dbname user=$user password=$password");
@@ -54,7 +54,8 @@ $queries = [
     "CREATE TABLE IF NOT EXISTS agendamentos (
         id SERIAL PRIMARY KEY,
         servico VARCHAR(20) NOT NULL,
-        data DATE NOT NULL
+        data DATE NOT NULL,
+        hora TIME NOT NULL
     )",
     "CREATE TABLE IF NOT EXISTS administradores (
         id SERIAL PRIMARY KEY,
@@ -74,5 +75,4 @@ foreach ($queries as $query) {
 
 pg_close($conn);
 echo "Estrutura do banco de dados criada com sucesso!";
-
 ?>
