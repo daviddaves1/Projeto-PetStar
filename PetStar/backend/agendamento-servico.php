@@ -2,7 +2,6 @@
 include 'configuracao.php';
 
 $conn = pg_connect("host=$host dbname=$dbname user=$user password=$password");
-
 if (!$conn) {
     die("Erro de conexão: " . pg_last_error());
 }
@@ -10,23 +9,26 @@ if (!$conn) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $servico = $_POST['servico'];
     $data = $_POST['data-agendamento-servico'];
+    $hora = $_POST['hora-agendamento-servico'];
 
     // Verifica se os campos não estão vazios
-    if (empty($servico) || empty($data)) {
-        echo "Erro: Todos os campos são obrigatórios.";
+    if (empty($servico) || empty($data) || empty($hora)) {
+        header("Location: ../agendar-servico.html?mensagem=Erro: Todos os campos são obrigatórios.");
+        exit();
     } else {
-        $query = "INSERT INTO agendamentos (servico, data) VALUES ($1, $2)";
-        $result = pg_query_params($conn, $query, array($servico, $data));
-
+        $query = "INSERT INTO agendamentos (servico, data, hora) VALUES ($1, $2, $3)";
+        $result = pg_query_params($conn, $query, array($servico, $data, $hora));
         if ($result) {
-            echo "Serviço agendado com sucesso!";
+            header("Location: ../agendar-servico.html?mensagem=Serviço agendado com sucesso!");
+            exit();
         } else {
-            echo "Erro ao agendar serviço: " . pg_last_error($conn);
+            header("Location: ../agendar-servico.html?mensagem=Erro ao agendar serviço: " . pg_last_error($conn));
+            exit();
         }
     }
-
     pg_close($conn);
 } else {
-    echo "Método de solicitação inválido.";
+    header("Location: ../agendar-servico.html?mensagem=Método de solicitação inválido.");
+    exit();
 }
 ?>

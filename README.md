@@ -47,7 +47,7 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 - **1. RF001** - O sistema deve ter opção de criação de conta para clientes.
 - **2. RF002** - O sistema deve possuir um perfil de usuário com opções de edição, disponível para clientes.
 - **3. RF003** - Na plataforma é precisa haver uma opção destinada ao cliente para agendamento de serviços com cuidado animal.
-- **4. RF004** - O sistema deverá possuir calendário integrado para visualização de horários disponíveis, podendo ser acessado somente pelo cliente.
+- **4. RF004** - O sistema deverá possuir uma área para visualização de horários disponíveis para agendamento de serviços  , podendo ser acessado somente pelo cliente.
 - **5. RF005** - O sistema em si deve abrigar uma área de produtos relacionados aos cuidados animais onde após serem escolhidos, devem ser direcionados para ocarrinho de compras, sendo essa opção disponível somente ao cliente.
 - **6. RF006** - Na plataforma é preciso que haja uma opção dedicada à adoção de animais de rua tratados por profissionais destinada somente para clientes.
 - **7. RF007** - O sistema deve conter uma área de suporte embutida que será usada para auxiliar o usuário a resolver problemas de usabilidade, sanar dúvidas, etc. A opção será disponibilizada somente para clientes.

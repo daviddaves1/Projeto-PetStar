@@ -6,8 +6,9 @@
     --cor2: #cf9100;
     --cor3: #1119AA;
     --cor4: #8e8e00;
-    --cor5: rgb(183, 255, 0); 
-    --cor6: rgb(99, 74, 0);
+    --cor5: #b7ff00; 
+    --cor6: #634a00;
+    --cor7: #c10000;
 }
 
 *{
@@ -29,16 +30,52 @@ body, html{
 }
 
 header {
-    display: flex;
-    align-items: center;
     padding: 10px;
     background-color: var(--cor0);
-    background-image: linear-gradient(to bottom, var(--cor4), var(--cor0));
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor0));
+    text-align: center;
 
     display: flex;
     align-items: center;
     flex-flow: column nowrap;
-    text-align: center;
+    position: relative;
+}
+
+header > .header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > .header-left > img {
+    width: 100px;
+    height: auto;
+}
+
+header > .header-left > h1, 
+header > .header-left > p {
+    color: white;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+header > .header-right {
+    display: flex;
+    gap: 10px;
+}
+
+header > .header-right > .btn {
+    background-color: var(--cor1);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header > .header-right > .btn:hover {
+    background-color: var(--cor2);
 }
 
 #img-petstar-small {
@@ -65,7 +102,8 @@ header > p{
 
 nav {
     background-color: var(--cor0);
-    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.403);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.403);
+    border: solid rgba(152, 147, 147, 0.414) 1px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -92,6 +130,7 @@ main{
     height: 100vh;
     width: 100vw;
     position: relative;
+    margin: auto;
 }
 
 .fundo-main{
@@ -143,6 +182,7 @@ footer {
     font-size: 1.1em;
     width: 100%;
     margin: auto;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,6 +194,7 @@ footer > p {
     color: white;
     margin-bottom: 14px;
     font-weight: 500;
+    text-align: center;
 }
 
 footer > p > a {
@@ -317,48 +358,55 @@ header, nav, .main-page{
 }
 
 .main-page {
-    min-height: 100vh;
-    max-width: 1000px;
-    margin: auto;
-    margin-bottom: 110px;
     padding: 20px;
-    line-height: 1.6;
-    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     flex: 1;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
 }
 
-.main-page > h1, .main-page > h2 {
+.main-page > section {
+    width: 100%;
+}
+
+.main-page > section > h1, 
+.main-page > section > h2 {
+    color: var(--cor0);
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.main-page > h1{
-    text-align: center;
-}
-
-.main-page > h2{
-    text-align: left;
-}
-
-.main-page > p {
+.main-page > section > p, 
+.main-page > section > ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
     text-align: justify;
-    margin-bottom: 20px;
 }
 
-.main-page > ul {
-    list-style-type: disc;
-    padding-left: 40px;
-    margin-bottom: 20px;
+.main-page > section > ul {
+    list-style: none;
+    padding: 0;
 }
 
-.main-page > ul > li {
-    margin-bottom: 10px;
+.main-page > section > ul > li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.main-page > p > strong{
-    text-align: center;
+.main-page > section > p > a {
+    font-weight: bold;
+    color: var(--cor4);
+    text-decoration: none;
+}
+
+.main-page > section > p > a:hover{
+    text-decoration: underline;
 }
 
 #form-agendamento {
@@ -474,5 +522,104 @@ header, nav, .main-page{
 }
 
 .botoes-remover:hover {
-    background-color: rgb(193, 0, 0);
+    background-color: var(--cor7);
+}
+
+#mensagem-alerta {
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#mensagem-alerta p {
+    font-weight: bold;
+    color: inherit;
+}
+
+/* Seta para voltar */
+.fundo-main a.back-arrow, header a.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: var(--cor0);
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo-main a.back-arrow:hover, header a.back-arrow:hover {
+    background-color: var(--cor0);
+    transform: scale(1.1);
+    color: white;
+}
+
+.material-symbols-outlined {
+    font-size: 24px;
+}
+
+
+.user-options {
+    position: absolute;
+    top: 1.2em;
+    right: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+.user-icon {
+    background-color: var(--cor5);
+    color: #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+}
+
+.user-icon:hover {
+    background-color: var(--cor2);
+    color: #fff;
+}
+
+.user-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 7px;
+    min-width: 100px;
+    padding: 4px 0;
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.user-menu a {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 4px 10px;
+    text-align: left;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
+.user-menu a:hover {
+    background-color: lightgray;
+    color: #000;
 }
