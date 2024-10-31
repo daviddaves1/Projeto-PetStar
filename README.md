@@ -71,7 +71,7 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 2. RN002 - As senhas fornecidas pelos clientes devem ser criptografadas de maneira segura antes de serem armazenadas no banco de dados.
 3. RN003 - Os clientes só podem agendar serviços em horários disponíveis, conforme o calendário integrado.
 4. RN004 - Produtos só podem ser adicionados ao carrinho se estiverem em estoque, e a quantidade deve ser atualizada à medida que os itens são reservados ou removidos.
-5. RN005 - Apenas clientes que finalizaram uma compra ou agendaram um serviço podem fornecer avaliações ou feedback sobre os produtos e serviços.
+5. RN005 - Apenas clientes que agendaram um serviço podem fornecer avaliações ou feedback sobre os produtos e serviços.
 6. RN007 - A exclusão da conta do cliente é permanente e irreversível, removendo todos os dados associados ao perfil.
 7. RN008 - O suporte ao cliente deve estar disponível a qualquer momento, e os clientes podem abrir tickets e acompanhar o status de suas solicitações.
 8. RN009 - O cliente só poderá visualizar horários de serviços que ainda estão disponíveis no calendário, evitando conflitos de agendamento.
