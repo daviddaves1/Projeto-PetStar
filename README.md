@@ -38,44 +38,68 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 - **4.** - Perfil de usuário com informações pessoais.
 - **5.** - Área de produtos dedicada ao cuidado e bem estar animal.
 - **6.** - Carrinho para armazenar os produtos de cuidado e bem-estar animal.
-- **7.** - Calendário integrado para a vizualização de horários para serviços.
+- **7.** - Área para a vizualização de horários e dias para serviços.
 - **8.** - Área de suporte.
 - **9.** - Área para avaliação e feedbacks.
 
 ### Requisitos Funcionais
 
-- **1. RF001** - O sistema deve ter opção de criação de conta para clientes.
-- **2. RF002** - O sistema deve possuir um perfil de usuário com opções de edição, disponível para clientes.
-- **3. RF003** - Na plataforma é precisa haver uma opção destinada ao cliente para agendamento de serviços com cuidado animal.
-- **4. RF004** - O sistema deverá possuir uma área para visualização de horários disponíveis para agendamento de serviços  , podendo ser acessado somente pelo cliente.
-- **5. RF005** - O sistema em si deve abrigar uma área de produtos relacionados aos cuidados animais onde após serem escolhidos, devem ser direcionados para ocarrinho de compras, sendo essa opção disponível somente ao cliente.
-- **6. RF006** - Na plataforma é preciso que haja uma opção dedicada à adoção de animais de rua tratados por profissionais destinada somente para clientes.
-- **7. RF007** - O sistema deve conter uma área de suporte embutida que será usada para auxiliar o usuário a resolver problemas de usabilidade, sanar dúvidas, etc. A opção será disponibilizada somente para clientes.
-- **8. RF008** - No software tem que haver uma opção para avaliações e feedbacks, porém será disponibilizada apenas para clientes, no intuito de verificar a satisfação dos mesmos com os serviços prestados.
-- **9. RF009** - No software, tem que haver uma opção para exclusão da conta pessoal, estando essa disponível somente aos clientes.
+- **1. RF001** - O sistema deve permitir a criação de conta para clientes e profissionais.
+- **2. RF002** - O sistema deve possuir um perfil de usuário com opções de edição, disponível para clientes e profissionais.
+- **3. RF003** - O sistema deve permitir que o cliente exclua a sua conta de forma permanente.
+- **4. RF004** - O sistema deve permitir o agendamento de serviços de tosa, banho e passeio para pets.
+- **5. RF005** - O sistema deve possuir uma área para visualização de horários disponíveis para agendamento de serviços, acessível para clientes e profissionais.
+- **6. RF006** - O sistema deve permitir a compra de produtos relacionados aos cuidados animais e direcionar esses produtos para o carrinho de compras, estando essa disponível apenas para clientes.
+- **7. RF007** - O sistema deve possuir uma opção dedicada à adoção de animais de rua tratados por profissionais, disponível somente para clientes.
+- **8. RF008** - O sistema deve conter uma área de suporte embutida para auxiliar os usuários a resolver problemas de usabilidade e sanar dúvidas.
+- **9. RF009** - O sistema deve permitir avaliações e feedbacks dos serviços prestados, disponível  somente para clientes.
+- **10. RF010** - O sistema deve permitir a exclusão da conta pessoal para clientes.
+- **11. RF011** - O sistema deve permitir a criação e edição de perfis detalhados, incluindo informações como especializações, avaliações, e informações sobre os pets, sendo essa atividade disponível para clientes e profissionais.
+- **12. RF012** - O sistema deve permitir o cancelamento e reagendamento de serviços pelos clientes e notificar os profissionais.
+- **13. RF013** - O sistema deve enviar notificações automáticas por WhatsApp sobre agendamentos e lembretes de serviços.
+- **14. RF014** - O sistema deve permitir a recuperação de senha, estando essa opção disponível para clientes, profissioanis e administradores.
+- **15. RF015** - O sistema deve permitir a troca de número de celular cadastrado, sendo esta atividade disponível aos clientes e profissionais.
+- **16. RF016** - O sistema deve oferecer um filtro de pesquisa por serviços e produtos.
+- **17. RF017** - O sistema deve possuir uma área de pagamento online seguro.
+- **18. RF018** - O sistema deve permitir a criação e edição de perfis para pets, incluindo informações como idade, raça, condições de saúde e preferências.
+- **19. RF019** - O sistema deve gerar relatórios e estatísticas dos serviços prestados, estando essa atividade disponível apenas aos administradores.
+- **20. RF020** - O sistema deve utilizar geolocalização para mostrar serviços e profissionais próximos aos clientes.
+- **21. RF021** - O sistema deve permitir aos administradores gerenciar clientes e profissionais, incluindo a exclusão de contas.
 
-### Requisitos Não Funcionais
+# Requisitos Não Funcionais
 
-- **1. RNF001** - O sistema deve ser compatível com os navegadores mais recentes, como Google Chrome, Mozilla Firefox, e Microsoft Edge.
-- **2. RNF002** - O sistema deve garantir a integridade dos dados, evitando duplicações e garantindo que todas as transações sejam completadas de forma atômica.
-- **3. RNF003** - A interface de usuário deve ser intuitiva e de fácil navegação, seguindo as diretrizes de design UX e UI modernas.
-- **4. RNF004** - O sistema deve ser escalável, permitindo a adição de novos módulos ou funcionalidades sem a necessidade de reestruturação significativa.
-- **5. RNF005** - O sistema deve ser versátil e adaptável para dispositivos móveis.
-- **6. RNF006** - O sistema deve possuir integralização com banco de dados de forma automatizada, garantindo assim agilidade nas operações e processamento de dados.
-- **7. RNF007** - O sistema não deve permitir a criação de conta para cliente que possua um email já existente no banco de dados.
-- **8. RNF008** - O sistema só deve criar o banco de dados e suas tabelas caso ele não exista no servidor.
-- **9. RFN009** - As senhas devem ser criptografadas de maneira segura.
+- **1. RNF001** - O sistema deve ser compatível com navegadores populares, como Google Chrome, Mozilla Firefox e Microsoft Edge.
+- **2. RNF002** - O sistema deve garantir a integridade dos dados, com transações atômicas e evitando duplicações de informações.
+- **3. RNF003** - A interface de usuário deve ser intuitiva, com design UX/UI que facilite a navegação e experiência do usuário.
+- **4. RNF004** - O sistema deve ser escalável, para que novos módulos ou funcionalidades possam ser integrados sem a necessidade de reestruturação significativa.
+- **5. RNF005** - O sistema deve ser adaptável a dispositivos móveis, com uma interface responsiva.
+- **6. RNF006** - A integração com o banco de dados deve ser automatizada para garantir agilidade nas operações e processamento de dados.
+- **7. RNF007** - O sistema deve impedir a criação de contas com e-mails já existentes no banco de dados.
+- **8. RNF008** - O sistema deve ser capaz de criar o banco de dados e suas tabelas automaticamente caso elas não existam no servidor.
+- **9. RNF009** - Senhas de usuários devem ser armazenadas com criptografia forte para segurança dos dados.
+- **10. RNF010** - O sistema deve possuir alta disponibilidade e suportar picos de acessos sem degradação de performance.
+- **11. RNF011** - O sistema deve ser auditável, permitindo o rastreamento de ações dos usuários e alterações nos dados.
+- **12. RNF012** - O sistema deve utilizar um serviço de envio de mensagens seguro e confiável para notificações de agendamento via WhatsApp.
+- **13. RNF013** - O sistema deve usar protocolos de segurança para proteger informações pessoais e transações de pagamento, como HTTPS e SSL.
+- **14. RNF014** - A funcionalidade de geolocalização deve respeitar a privacidade do usuário, solicitando consentimento para acesso à localização.
+- **15. RNF015** - O sistema deve gerar relatórios de forma otimizada para minimizar o tempo de espera dos administradores.
 
-### Regras de Negócio
-1. RN001 - Um cliente só pode criar uma conta se fornecer um email único, que não esteja registrado no sistema.
-2. RN002 - As senhas fornecidas pelos clientes devem ser criptografadas de maneira segura antes de serem armazenadas no banco de dados.
-3. RN003 - Os clientes só podem agendar serviços em horários disponíveis, conforme o calendário integrado.
-4. RN004 - Produtos só podem ser adicionados ao carrinho se estiverem em estoque, e a quantidade deve ser atualizada à medida que os itens são reservados ou removidos.
-5. RN005 - Apenas clientes que finalizaram uma compra ou agendaram um serviço podem fornecer avaliações ou feedback sobre os produtos e serviços.
-6. RN007 - A exclusão da conta do cliente é permanente e irreversível, removendo todos os dados associados ao perfil.
-7. RN008 - O suporte ao cliente deve estar disponível a qualquer momento, e os clientes podem abrir tickets e acompanhar o status de suas solicitações.
-8. RN009 - O cliente só poderá visualizar horários de serviços que ainda estão disponíveis no calendário, evitando conflitos de agendamento.
-9. RN006 - O cliente pode editar suas informações pessoais no perfil.
+# Regras de Negócio
+
+1. **RN001** - Um cliente ou profissional só pode criar uma conta se fornecer um e-mail único, que não esteja registrado no sistema.
+2. **RN002** - As senhas dos usuários (clientes, profissionais e administradores) devem ser armazenadas de maneira segura com criptografia avançada antes de serem gravadas no banco de dados.
+3. **RN003** - Clientes podem agendar serviços somente em horários disponíveis no calendário do sistema.
+4. **RN004** - Produtos só podem ser adicionados ao carrinho se estiverem em estoque. A quantidade disponível deve ser atualizada automaticamente à medida que os produtos são adicionados ou removidos do carrinho.
+5. **RN005** - Somente clientes que concluíram um serviço podem fornecer avaliações ou feedback sobre o serviço ou o profissional responsável.
+6. **RN006** - A exclusão da conta do cliente ou profissional é permanente e irreversível, removendo todos os dados associados ao perfil, exceto informações exigidas para fins de auditoria.
+7. **RN007** - O suporte ao cliente deve estar disponível para todos os usuários do sistema, permitindo que clientes e profissionais abram tickets e acompanhem o status de suas solicitações.
+8. **RN008** - Somente horários de serviços que ainda estão disponíveis no calendário serão exibidos para os clientes, evitando conflitos de agendamento.
+9. **RN009** - Clientes e profissionais podem editar informações pessoais em seus perfis, incluindo contato, preferências e dados específicos sobre pets no caso dos clientes.
+10. **RN010** - Animais para adoção só podem ser incluídos por profissionais autorizados e com certificação veterinária, que garanta a saúde do animal.
+11. **RN011** - A recuperação de senha deve ser realizada mediante autenticação de dois fatores, enviando um código de verificação para o e-mail ou número de celular cadastrado.
+12. **RN012** - As transações de pagamento devem ser concluídas de maneira segura, e um recibo eletrônico deve ser enviado ao cliente por e-mail após a confirmação do pagamento.
+13. **RN013** - A exibição de serviços e profissionais próximos ao cliente através de geolocalização deve respeitar a configuração de privacidade e consentimento explícito do cliente.
+14. **RN014** - Somente administradores podem acessar relatórios e estatísticas completas dos serviços prestados, para monitoramento de desempenho e melhorias no sistema.
 
 ### Modelo Arquitetural
 
