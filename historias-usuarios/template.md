@@ -125,4 +125,4 @@ Plataforma digital que simplifique a administração de cuidados e consultas par
 ### 🐾 **HU-20: Troca de número de celular**
 - **Como cliente**
 - **Quero** conseguir trocar o meu número de celular cadastrado
-- **Para** que minha informações fiquem atualizadas.
+- **Para** que minhas informações fiquem atualizadas.
