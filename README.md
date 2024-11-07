@@ -1,4 +1,4 @@
-## 🌟 **Projeto-PetStar** 🌟
+# 🌟 **Projeto-PetStar** 🌟
 
 ## ms_20242_g9
 Repositório definido para a manutenção do controle de versão dos artefatos do projeto do Grupo 9, da disciplina de Modelagem de Software, no semestre 2024-2.
