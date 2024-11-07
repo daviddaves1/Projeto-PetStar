@@ -33,9 +33,9 @@ Plataforma digital que simplifique a administração de cuidados e consultas par
 
 ---
 
-### 🐾 **HU-5: Calendário Integrado**
-- **Como cliente**, quero visualizar os horários disponíveis no calendário para escolher o melhor momento para agendar os serviços.
-- **Como profissional**, quero um calendário integrado para gerenciar meus horários e evitar conflitos de agenda.
+### 🐾 **HU-5: Área para vizualização de horários**
+- **Como cliente**, quero visualizar os horários disponíveis em uma área para escolher o melhor momento para agendar os serviços.
+- **Como profissional**, quero uma área para gerenciar meus horários e evitar conflitos na agenda.
 
 ---
 
