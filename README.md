@@ -103,11 +103,9 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 
 ### Modelo Arquitetural
 
-A estrutura mais alinhada ao produto final é a do tipo Cliente-Servidor. Nesse esquema, o cliente tem a função de iniciar a interação com o servidor, que fica em estado de espera para receber solicitações e oferecer os serviços necessários. Um exemplo comum dessa arquitetura é o modelo de três camadas:
+A estrutura mais alinhada ao produto final é a do tipo interface para o cliente. Nesse esquema, o cliente tem a função de iniciar a interação com o protótipo, que fica em estado responsivo quando as interações acontecem.
 
-- Camada de Interface (Cliente): A interação com o usuário será implementada utilizando HTML, CSS e Java Script.
-- Camada de Processamento de Regras (Servidor): Trata as solicitações vindas do cliente através de PHP.
-- Camada de Banco de Dados (Servidor): Responsável por organizar e recuperar as informações usando PostgreSQL.
+- Camada de Interface (Cliente): A interação com o usuário será implementada utilizando a plataforma Figma.
 
 ### Modelo de Interfaces Gráficas
 <Apresentar uma descrição sucinta do modelo de interfaces gráficas do Produto.>
