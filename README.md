@@ -34,13 +34,12 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 
 - **1.** - Cadastro de cliente (RF001).
 - **2.** - Agendamento de serviços relacionados ao cuidado e bem-estar animal.
-- **3.** - Conexão entre front-end e back-end na aplicação do projeto.
-- **4.** - Perfil de usuário com informações pessoais.
-- **5.** - Área de produtos dedicada ao cuidado e bem estar animal.
-- **6.** - Carrinho para armazenar os produtos de cuidado e bem-estar animal.
-- **7.** - Área para a vizualização de horários e dias para serviços.
-- **8.** - Área de suporte.
-- **9.** - Área para avaliação e feedbacks.
+- **3.** - Perfil de usuário com informações pessoais.
+- **4.** - Área de produtos dedicada ao cuidado e bem estar animal.
+- **5.** - Carrinho para armazenar os produtos de cuidado e bem-estar animal.
+- **6.** - Área para a vizualização de horários e dias para serviços.
+- **7.** - Área de suporte.
+- **8.** - Área para avaliação e feedbacks.
 
 ### Requisitos Funcionais
 
@@ -53,18 +52,17 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 - **7. RF007** - O sistema deve possuir uma opção dedicada à adoção de animais de rua tratados por profissionais, disponível somente para clientes.
 - **8. RF008** - O sistema deve conter uma área de suporte embutida para auxiliar os usuários a resolver problemas de usabilidade e sanar dúvidas.
 - **9. RF009** - O sistema deve permitir avaliações e feedbacks dos serviços prestados, disponível  somente para clientes.
-- **10. RF010** - O sistema deve permitir a exclusão da conta pessoal para clientes.
-- **11. RF011** - O sistema deve permitir a criação e edição de perfis detalhados, incluindo informações como especializações, avaliações, e informações sobre os pets, sendo essa atividade disponível para clientes e profissionais.
-- **12. RF012** - O sistema deve permitir o cancelamento e reagendamento de serviços pelos clientes e notificar os profissionais.
-- **13. RF013** - O sistema deve enviar notificações automáticas por WhatsApp sobre agendamentos e lembretes de serviços.
-- **14. RF014** - O sistema deve permitir a recuperação de senha, estando essa opção disponível para clientes, profissioanis e administradores.
-- **15. RF015** - O sistema deve permitir a troca de número de celular cadastrado, sendo esta atividade disponível aos clientes e profissionais.
-- **16. RF016** - O sistema deve oferecer um filtro de pesquisa por serviços e produtos.
-- **17. RF017** - O sistema deve possuir uma área de pagamento online seguro.
-- **18. RF018** - O sistema deve permitir a criação e edição de perfis para pets, incluindo informações como idade, raça, condições de saúde e preferências.
-- **19. RF019** - O sistema deve gerar relatórios e estatísticas dos serviços prestados, estando essa atividade disponível apenas aos administradores.
-- **20. RF020** - O sistema deve utilizar geolocalização para mostrar serviços e profissionais próximos aos clientes.
-- **21. RF021** - O sistema deve permitir aos administradores gerenciar clientes e profissionais, incluindo a exclusão de contas.
+- **10. RF010** - O sistema deve permitir a criação e edição de perfis detalhados, incluindo informações como especializações, avaliações, e informações sobre os pets, sendo essa atividade disponível para clientes e profissionais.
+- **11. RF011** - O sistema deve permitir o cancelamento e reagendamento de serviços pelos clientes e notificar os profissionais.
+- **12. RF012** - O sistema deve enviar notificações automáticas por WhatsApp sobre agendamentos e lembretes de serviços.
+- **13. RF013** - O sistema deve permitir a recuperação de senha, estando essa opção disponível para clientes, profissioanis e administradores.
+- **14. RF014** - O sistema deve permitir a troca de número de celular cadastrado, sendo esta atividade disponível aos clientes e profissionais.
+- **15. RF015** - O sistema deve oferecer um filtro de pesquisa por serviços e produtos.
+- **16. RF016** - O sistema deve possuir uma área de pagamento online seguro.
+- **17. RF017** - O sistema deve permitir a criação e edição de perfis para pets, incluindo informações como idade, raça, condições de saúde e preferências.
+- **18. RF018** - O sistema deve gerar relatórios e estatísticas dos serviços prestados, estando essa atividade disponível apenas aos administradores.
+- **19. RF019** - O sistema deve utilizar geolocalização para mostrar serviços e profissionais próximos aos clientes.
+- **20. RF020** - O sistema deve permitir aos administradores gerenciar clientes e profissionais, incluindo a exclusão de contas.
 
 # Requisitos Não Funcionais
 
@@ -86,20 +84,20 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 
 # Regras de Negócio
 
-1. **RN001** - Um cliente ou profissional só pode criar uma conta se fornecer um e-mail único, que não esteja registrado no sistema.
-2. **RN002** - As senhas dos usuários (clientes, profissionais e administradores) devem ser armazenadas de maneira segura com criptografia avançada antes de serem gravadas no banco de dados.
-3. **RN003** - Clientes podem agendar serviços somente em horários disponíveis na área de vizualização de horários.
-4. **RN004** - Produtos só podem ser adicionados ao carrinho se estiverem em estoque. A quantidade disponível deve ser atualizada automaticamente à medida que os produtos são adicionados ou removidos do carrinho.
-5. **RN005** - Somente clientes que concluíram um serviço podem fornecer avaliações ou feedback sobre o serviço ou o profissional responsável.
-6. **RN006** - A exclusão da conta do cliente ou profissional é permanente e irreversível, removendo todos os dados associados ao perfil, exceto informações exigidas para fins de auditoria.
-7. **RN007** - O suporte ao cliente deve estar disponível para todos os usuários do sistema, permitindo que clientes, profissionais e administradores abram tickets e acompanhem o status de suas solicitações.
-8. **RN008** - Somente horários de serviços que estarão disponíveis na área de vizualização serão exibidos para os clientes, evitando assim conflitos de agendamento.
-9. **RN009** - Clientes e profissionais podem editar informações pessoais em seus perfis, incluindo contato, preferências e dados específicos sobre pets no caso dos clientes.
-10. **RN010** - Para o processo de adoção, só podem estar disponíveis animais avaliados por profissionais com registro no Conselho Regional de Medicina Veterinária do estado onde atua, garantindo a saúde do animal.
-11. **RN011** - A recuperação de senha deve ser realizada mediante autenticação de dois fatores, enviando um código de verificação para o e-mail ou número de celular cadastrado.
-12. **RN012** - As transações de pagamento devem ser concluídas de maneira segura, e um recibo eletrônico deve ser enviado ao cliente por e-mail após a confirmação do pagamento.
-13. **RN013** - A exibição de serviços e profissionais próximos ao cliente através de geolocalização deve respeitar a configuração de privacidade e consentimento explícito do cliente.
-14. **RN014** - Somente administradores podem acessar relatórios e estatísticas completas dos serviços prestados, para monitoramento de desempenho e melhorias no sistema.
+- **1. RN001** - Um cliente ou profissional só pode criar uma conta se fornecer um e-mail único, que não esteja registrado no sistema.
+- **2. RN002** - As senhas dos usuários (clientes, profissionais e administradores) devem ser armazenadas de maneira segura com criptografia avançada antes de serem gravadas no banco de dados.
+- **3. RN003** - Clientes podem agendar serviços somente em horários disponíveis na área de vizualização de horários.
+- **4. RN004** - Produtos só podem ser adicionados ao carrinho se estiverem em estoque. A quantidade disponível deve ser atualizada automaticamente à medida que os produtos são adicionados ou removidos do carrinho.
+- **5. RN005** - Somente clientes que concluíram um serviço podem fornecer avaliações ou feedback sobre o serviço ou o profissional responsável.
+- **6. RN006** - A exclusão da conta do cliente ou profissional é permanente e irreversível, removendo todos os dados associados ao perfil, exceto informações exigidas para fins de auditoria.
+- **7. RN007** - O suporte ao cliente deve estar disponível para todos os usuários do sistema, permitindo que clientes, profissionais e administradores abram tickets e acompanhem o status de suas solicitações.
+- **8. RN008** - Somente horários de serviços que estarão disponíveis na área de vizualização serão exibidos para os clientes, evitando assim conflitos de agendamento.
+- **9. RN009** - Clientes e profissionais podem editar informações pessoais em seus perfis, incluindo contato, preferências e dados específicos sobre pets no caso dos clientes.
+- **10. RN010** - Para o processo de adoção, só podem estar disponíveis animais avaliados por profissionais com registro no Conselho Regional de Medicina Veterinária do estado onde atua, garantindo a saúde do animal.
+- **11. RN011** - A recuperação de senha deve ser realizada mediante autenticação de dois fatores, enviando um código de verificação para o e-mail ou número de celular cadastrado.
+- **12. RN012** - As transações de pagamento devem ser concluídas de maneira segura, e um recibo eletrônico deve ser enviado ao cliente por e-mail após a confirmação do pagamento.
+- **13. RN013** - A exibição de serviços e profissionais próximos ao cliente através de geolocalização deve respeitar a configuração de privacidade e consentimento explícito do cliente.
+- **14. RN014** - Somente administradores podem acessar relatórios e estatísticas completas dos serviços prestados, para monitoramento de desempenho e melhorias no sistema.
 
 ### Modelo Arquitetural
 
@@ -125,7 +123,7 @@ O nosso planejamento inicial é hospedar nossa aplicação no [Local a definir],
 |3|Itens do backlog <1,2,3>|02/10/2024|15/10/2024|Grupo 09|Em andamento|
 |4|Itens do backlog <4,5,6>|23/10/2024|03/11/2024|Grupo 09|Programada|
 |5|Itens do backlog <7,8,9>|30/10/2024|12/11/2024|Grupo 09|Programada|
-|6|Apresentação do Projeto|18/11/2024|26/11/2024|Grupo 09|Programada|
+|6|Apresentação do Projeto|19/11/2024|26/11/2024|Grupo 09|Programada|
 
 ### Iterações x Atividades
 
@@ -152,4 +150,4 @@ O nosso planejamento inicial é hospedar nossa aplicação no [Local a definir],
 | 5        | Projeto de Interfaces gráficas dos itens do backlog <7,8,9>  | 07/11/2024  | 15/11/2024 | Grupo 09    | Programada               |
 | 5        | Projeto de persistência dos itens do backlog <7,8,9>         | 10/11/2024  | 17/11/2024 | Grupo 09    | Programada               |
 | 5        | Implementação dos itens do backlog <7,8,9>                   | 10/11/2024  | 17/11/2024 | Grupo 09    | Programada               |
-| 6        | Apresentação do Projeto                                      | 18/11/2024  | 26/11/2024 | Grupo 09    | Programada               |
+| 6        | Apresentação do Projeto                                      | 19/11/2024  | 26/11/2024 | Grupo 09    | Programada               |
