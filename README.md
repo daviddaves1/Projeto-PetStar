@@ -88,14 +88,14 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 
 1. **RN001** - Um cliente ou profissional só pode criar uma conta se fornecer um e-mail único, que não esteja registrado no sistema.
 2. **RN002** - As senhas dos usuários (clientes, profissionais e administradores) devem ser armazenadas de maneira segura com criptografia avançada antes de serem gravadas no banco de dados.
-3. **RN003** - Clientes podem agendar serviços somente em horários disponíveis no calendário do sistema.
+3. **RN003** - Clientes podem agendar serviços somente em horários disponíveis na área de vizualização de horários.
 4. **RN004** - Produtos só podem ser adicionados ao carrinho se estiverem em estoque. A quantidade disponível deve ser atualizada automaticamente à medida que os produtos são adicionados ou removidos do carrinho.
 5. **RN005** - Somente clientes que concluíram um serviço podem fornecer avaliações ou feedback sobre o serviço ou o profissional responsável.
 6. **RN006** - A exclusão da conta do cliente ou profissional é permanente e irreversível, removendo todos os dados associados ao perfil, exceto informações exigidas para fins de auditoria.
-7. **RN007** - O suporte ao cliente deve estar disponível para todos os usuários do sistema, permitindo que clientes e profissionais abram tickets e acompanhem o status de suas solicitações.
-8. **RN008** - Somente horários de serviços que ainda estão disponíveis no calendário serão exibidos para os clientes, evitando conflitos de agendamento.
+7. **RN007** - O suporte ao cliente deve estar disponível para todos os usuários do sistema, permitindo que clientes, profissionais e administradores abram tickets e acompanhem o status de suas solicitações.
+8. **RN008** - Somente horários de serviços que estarão disponíveis na área de vizualização serão exibidos para os clientes, evitando assim conflitos de agendamento.
 9. **RN009** - Clientes e profissionais podem editar informações pessoais em seus perfis, incluindo contato, preferências e dados específicos sobre pets no caso dos clientes.
-10. **RN010** - Animais para adoção só podem ser incluídos por profissionais autorizados e com certificação veterinária, que garanta a saúde do animal.
+10. **RN010** - Para o processo de adoção, só podem estar disponíveis animais avaliados por profissionais com registro no Conselho Regional de Medicina Veterinária do estado onde atua, garantindo a saúde do animal.
 11. **RN011** - A recuperação de senha deve ser realizada mediante autenticação de dois fatores, enviando um código de verificação para o e-mail ou número de celular cadastrado.
 12. **RN012** - As transações de pagamento devem ser concluídas de maneira segura, e um recibo eletrônico deve ser enviado ao cliente por e-mail após a confirmação do pagamento.
 13. **RN013** - A exibição de serviços e profissionais próximos ao cliente através de geolocalização deve respeitar a configuração de privacidade e consentimento explícito do cliente.
