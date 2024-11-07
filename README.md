@@ -1,25 +1,26 @@
-# 🌟 **Projeto-PetStar** 🌟
+## 🌟 **Projeto-PetStar** 🌟
 
-# ms_20242_g9
+## ms_20242_g9
 Repositório definido para a manutenção do controle de versão dos artefatos do projeto do Grupo 9, da disciplina de Modelagem de Software, no semestre 2024-2.
 
-# Nome do Projeto:
+## Nome do Projeto:
 PetStar - Brilho Animal
 
-# Descrição:
+## Descrição:
 Plataforma digital que simplifique a administração de cuidados e consultas para pets, conectando proprietários de animais a profissionais como tosadores e cuidadores. A plataforma possibilitará agendamentos, compras de produtos, suporte ao usuário e adoção de animais, sendo esses serviços realizados na própria loja da PetStar.
 
-# Problema
+## Problema
 Atualmente, muitos donos de pets enfrentam dificuldades ao interagir com pet shops. Problemas comuns incluem a falta de comunicação eficiente com os profissionais, ausência de perfis online detalhados e dificuldade em agendar serviços. Além disso, a compra de produtos para pets muitas vezes não é conveniente, pois nem todos os pet shops oferecem opções online.
 
-# Objetivos da Solução
+## Objetivos da Solução
+
 - Promover conforto e versatilidade aos donos de pets através de opções remotas e inovadoras para agendamento de serviços e compra de produtos.
 - Facilitar a comunicação entre donos de pets e profissionais, oferecendo perfis detalhados e avaliações para garantir a qualidade dos serviços.
 - Promover o bem-estar animal, conscientizando os donos sobre os cuidados necessários e oferecendo suporte contínuo.
 - Incentivar a adoção responsável de animais de rua, conectando potenciais adotantes a pets tratados por profissionais.
 - Garantir a satisfação do cliente através de um suporte eficiente e uma experiência de usuário intuitiva e agradável.
 
-# Grupo
+## Grupo
 Este projeto será desenvolvido pelos componentes do grupo 9: 
 
 | 📑 Matrícula  | 📝 Nome Completo                    | 👤 Usuário Git                                                |
@@ -30,7 +31,7 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 | 202403090     | RAFAEL FERNANDES DA SILVA            | [RafaelFernandes1112](https://github.com/RafaelFernandes1112) | 
 | 202403091     | RODRIGO LUIZ FERREIRA RAMOS          | [rodrigoluizf](https://github.com/rodrigoluizf)               |
 
-# Backlog do Produto
+## Backlog do Produto
 
 - **1.** - Cadastro de cliente (RF001).
 - **2.** - Agendamento de serviços relacionados ao cuidado e bem-estar animal.
@@ -41,7 +42,7 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 - **7.** - Área de suporte.
 - **8.** - Área para avaliação e feedbacks.
 
-# Requisitos Funcionais
+## Requisitos Funcionais
 
 - **1. RF001** - O sistema deve permitir a criação de conta para clientes e profissionais.
 - **2. RF002** - O sistema deve possuir um perfil de usuário com opções de edição, disponível para clientes e profissionais.
@@ -64,7 +65,7 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 - **19. RF019** - O sistema deve utilizar geolocalização para mostrar serviços e profissionais próximos aos clientes.
 - **20. RF020** - O sistema deve permitir aos administradores gerenciar clientes e profissionais, incluindo a exclusão de contas.
 
-# Requisitos Não Funcionais
+## Requisitos Não Funcionais
 
 - **1. RNF001** - O sistema deve ser compatível com navegadores populares, como Google Chrome, Mozilla Firefox e Microsoft Edge.
 - **2. RNF002** - O sistema deve garantir a integridade dos dados, com transações atômicas e evitando duplicações de informações.
@@ -82,7 +83,7 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 - **14. RNF014** - A funcionalidade de geolocalização deve respeitar a privacidade do usuário, solicitando consentimento para acesso à localização.
 - **15. RNF015** - O sistema deve gerar relatórios de forma otimizada para minimizar o tempo de espera dos administradores.
 
-# Regras de Negócio
+## Regras de Negócio
 
 - **1. RN001** - Um cliente ou profissional só pode criar uma conta se fornecer um e-mail único, que não esteja registrado no sistema.
 - **2. RN002** - As senhas dos usuários (clientes, profissionais e administradores) devem ser armazenadas de maneira segura com criptografia avançada antes de serem gravadas no banco de dados.
@@ -99,22 +100,22 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 - **13. RN013** - A exibição de serviços e profissionais próximos ao cliente através de geolocalização deve respeitar a configuração de privacidade e consentimento explícito do cliente.
 - **14. RN014** - Somente administradores podem acessar relatórios e estatísticas completas dos serviços prestados, para monitoramento de desempenho e melhorias no sistema.
 
-# Modelo Arquitetural
+## Modelo Arquitetural
 
 A estrutura mais alinhada ao produto final é a do tipo interface para o cliente. Nesse esquema, o cliente tem a função de iniciar a interação com o protótipo, que fica em estado responsivo quando as interações acontecem.
 
 - Camada de Interface (Cliente): A interação com o usuário será implementada utilizando a plataforma Figma.
 
-# Modelo de Interfaces Gráficas
+## Modelo de Interfaces Gráficas
 <Apresentar uma descrição sucinta do modelo de interfaces gráficas do Produto.>
 
-# Tecnologia de Persistência de Dados
+## Tecnologia de Persistência de Dados
 <Apresentar uma descrição sucinta do modelo de persistência do Produto.>
 
-# Local do _Deploy_
+## Local do _Deploy_
 O nosso planejamento inicial é hospedar nossa aplicação no [Local a definir], sendo crucial para nossa escolha a facilidade de configuração e também os recursos ofertados na versão gratuita.
 
-# Cronograma de Desenvolvimento
+## Cronograma de Desenvolvimento
 
 |Iteração|Descrição|Data Início|Data Fim|Responsável|Situação|
 |---|---|---|---|---|---|
@@ -125,7 +126,7 @@ O nosso planejamento inicial é hospedar nossa aplicação no [Local a definir],
 |5|Itens do backlog <7,8,9>|30/10/2024|12/11/2024|Grupo 09|Programada|
 |6|Apresentação do Projeto|19/11/2024|26/11/2024|Grupo 09|Programada|
 
-# Iterações x Atividades
+## Iterações x Atividades
 
 | Iteração | Atividade                                                    | Início      | Fim        | Responsável | Status                   |
 |----------|--------------------------------------------------------------|-------------|------------|-------------|--------------------------|
