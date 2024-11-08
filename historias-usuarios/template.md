@@ -33,9 +33,9 @@ Plataforma digital que simplifique a administração de cuidados e consultas par
 
 ---
 
-### 🐾 **HU-5: Calendário Integrado**
-- **Como cliente**, quero visualizar os horários disponíveis no calendário para escolher o melhor momento para agendar os serviços.
-- **Como profissional**, quero um calendário integrado para gerenciar meus horários e evitar conflitos de agenda.
+### 🐾 **HU-5: Área para vizualização de horários**
+- **Como cliente**, quero visualizar os horários disponíveis em uma área para escolher o melhor momento para agendar os serviços.
+- **Como profissional**, quero uma área para gerenciar meus horários e evitar conflitos na agenda.
 
 ---
 
@@ -111,14 +111,18 @@ Plataforma digital que simplifique a administração de cuidados e consultas par
 ---
 
 ### 🐾 **HU-18: Lista de desejos**
-- **Como cliente**, quero adicionar produtos e serviços em uma lista de desejos, para me organizar melhor e acompanhar produtos e serviços que planejo contratar no futuro. 
+- **Como cliente**, quero adicionar produtos e serviços em uma lista de desejos, para me organizar melhor e acompanhar produtos e serviços que planejo contratar no futuro.
+
+---
 
 ### 🐾 **HU-19: Recuperação de senha**
 - **Como cliente**
 - **Quero** conseguir trocar minha senha quando esquecer
-- **Para** que eu não precise criar uma nova conta.   
+- **Para** que eu não precise criar uma nova conta.
+
+---
 
 ### 🐾 **HU-20: Troca de número de celular**
 - **Como cliente**
 - **Quero** conseguir trocar o meu número de celular cadastrado
-- **Para** que minha informações fiquem atualizadas.
+- **Para** que minhas informações fiquem atualizadas.
