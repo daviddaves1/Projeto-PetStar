@@ -6,6 +6,10 @@
 
 Plataforma digital que simplifique a administração de cuidados e consultas para pets, ligando proprietários de animais a profissionais como tosadores e cuidadores. A plataforma possibilitará agendamentos, compras de produtos, suporte ao usuário e adoção de animais.
 
+### **Link Figma:**
+
+https://www.figma.com/design/bYtT73q80N39R9n5jAmNFX/petshop?node-id=0-1&t=vuweMHY0Rveb7S7s-1
+
 ### **Histórias de Usuário**
 
 ---
