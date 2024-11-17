@@ -1,0 +1,136 @@
+@startuml
+actor Cliente
+actor Profissional
+actor Administrador
+
+package "HU-1: Cadastro e Login" {
+    usecase "Cadastrar-se como Cliente" as UC1
+    usecase "Cadastrar-se como Profissional" as UC2
+    Cliente --> UC1
+    Profissional --> UC2
+}
+
+package "HU-2: Gerenciamento de Clientes e Profissionais" {
+    usecase "Excluir Clientes e Profissionais" as UC3
+    Administrador --> UC3
+}
+
+package "HU-3: Perfil do Usuário" {
+    usecase "Criar/Editar Perfil de Cliente" as UC4
+    usecase "Criar/Editar Perfil de Profissional" as UC5
+    Cliente --> UC4
+    Profissional --> UC5
+}
+
+package "HU-4: Agendamento de Serviços" {
+    usecase "Agendar Serviços" as UC6
+    usecase "Gerenciar Agendamentos" as UC7
+    Cliente --> UC6
+    Profissional --> UC7
+}
+
+package "HU-5: Visualização de Horários" {
+    usecase "Visualizar Horários Disponíveis" as UC8
+    usecase "Gerenciar Horários" as UC9
+    Cliente --> UC8
+    Profissional --> UC9
+}
+
+package "HU-6: Avaliação de Serviços" {
+    usecase "Avaliar Serviços" as UC10
+    usecase "Visualizar e Responder Avaliações" as UC11
+    Cliente --> UC10
+    Profissional --> UC11
+}
+
+package "HU-7: Histórico de Serviços" {
+    usecase "Acessar Histórico de Serviços do Pet" as UC12
+    usecase "Visualizar Histórico de Serviços" as UC13
+    Cliente --> UC12
+    Profissional --> UC13
+}
+
+package "HU-8: Notificações Automáticas" {
+    usecase "Receber Notificações de Agendamentos" as UC14
+    usecase "Notificar Profissional sobre Agendamentos" as UC15
+    Cliente --> UC14
+    Profissional --> UC15
+}
+
+package "HU-9: Filtro de Pesquisa" {
+    usecase "Usar Filtros de Pesquisa para Encontrar Profissionais" as UC16
+    Cliente --> UC16
+}
+
+package "HU-10: Sistema de Pagamento Online" {
+    usecase "Realizar Pagamento Online" as UC17
+    usecase "Receber Pagamento Integrado" as UC18
+    Cliente --> UC17
+    Profissional --> UC18
+}
+
+package "HU-11: Perfil do Pet" {
+    usecase "Criar/Editar Perfil do Pet" as UC19
+    usecase "Visualizar Perfil do Pet" as UC20
+    Cliente --> UC19
+    Profissional --> UC20
+}
+
+package "HU-12: Cancelamento e Reagendamento" {
+    usecase "Cancelar/Reagendar Serviço" as UC21
+    usecase "Notificar Profissional sobre Cancelamento/Reagendamento" as UC22
+    Cliente --> UC21
+    Profissional --> UC22
+}
+
+package "HU-13: Sistema de Suporte e Ajuda" {
+    usecase "Acessar Suporte para Cliente" as UC23
+    usecase "Acessar Suporte para Profissional" as UC24
+    Cliente --> UC23
+    Profissional --> UC24
+}
+
+package "HU-14: Promoções e Ofertas Personalizadas" {
+    usecase "Receber Promoções e Ofertas" as UC25
+    usecase "Criar Promoções e Ofertas" as UC26
+    Cliente --> UC25
+    Profissional --> UC26
+}
+
+package "HU-15: Relatórios e Estatísticas" {
+    usecase "Acessar Relatórios de Serviços" as UC27
+    usecase "Visualizar Relatórios de Uso" as UC28
+    Profissional --> UC27
+    Administrador --> UC28
+}
+
+package "HU-16: Recomendações Personalizadas" {
+    usecase "Receber Recomendações para o Pet" as UC29
+    usecase "Oferecer Recomendações Personalizadas" as UC30
+    Cliente --> UC29
+    Profissional --> UC30
+}
+
+package "HU-17: Geolocalização" {
+    usecase "Localizar Profissionais Próximos" as UC31
+    usecase "Disponibilizar Localização" as UC32
+    Cliente --> UC31
+    Profissional --> UC32
+}
+
+package "HU-18: Lista de Desejos" {
+    usecase "Adicionar Serviços/Produtos à Lista de Desejos" as UC33
+    Cliente --> UC33
+}
+
+package "HU-19: Recuperação de Senha" {
+    usecase "Recuperar Senha" as UC34
+    Cliente --> UC34
+}
+
+package "HU-20: Troca de Número de Celular" {
+    usecase "Atualizar Número de Celular" as UC35
+    Cliente --> UC35
+}
+
+@enduml

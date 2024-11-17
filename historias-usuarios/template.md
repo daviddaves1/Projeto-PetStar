@@ -6,6 +6,10 @@
 
 Plataforma digital que simplifique a administração de cuidados e consultas para pets, ligando proprietários de animais a profissionais como tosadores e cuidadores. A plataforma possibilitará agendamentos, compras de produtos, suporte ao usuário e adoção de animais.
 
+### **Link Figma:**
+
+https://www.figma.com/design/bYtT73q80N39R9n5jAmNFX/petshop?node-id=0-1&t=vuweMHY0Rveb7S7s-1
+
 ### **Histórias de Usuário**
 
 ---
@@ -33,9 +37,9 @@ Plataforma digital que simplifique a administração de cuidados e consultas par
 
 ---
 
-### 🐾 **HU-5: Calendário Integrado**
-- **Como cliente**, quero visualizar os horários disponíveis no calendário para escolher o melhor momento para agendar os serviços.
-- **Como profissional**, quero um calendário integrado para gerenciar meus horários e evitar conflitos de agenda.
+### 🐾 **HU-5: Área para vizualização de horários**
+- **Como cliente**, quero visualizar os horários disponíveis em uma área para escolher o melhor momento para agendar os serviços.
+- **Como profissional**, quero uma área para gerenciar meus horários e evitar conflitos na agenda.
 
 ---
 
@@ -52,7 +56,7 @@ Plataforma digital que simplifique a administração de cuidados e consultas par
 ---
 
 ### 🐾 **HU-8: Notificações automáticas**
-- **Como cliente**, quero receber notificações por whatsapp sobre meus agendamentos e lembretes de serviços futuros para me manter informado.
+- **Como cliente**, quero receber notificações sobre meus agendamentos e lembretes de serviços futuros para me manter informado.
 - **Como profissional**, quero ser notificado quando um cliente agendar, cancelar ou modificar um serviço, para que eu possa ajustar minha agenda.
 
 ---
@@ -125,4 +129,4 @@ Plataforma digital que simplifique a administração de cuidados e consultas par
 ### 🐾 **HU-20: Troca de número de celular**
 - **Como cliente**
 - **Quero** conseguir trocar o meu número de celular cadastrado
-- **Para** que minha informações fiquem atualizadas.
+- **Para** que minhas informações fiquem atualizadas.
