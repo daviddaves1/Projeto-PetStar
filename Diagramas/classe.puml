@@ -1,0 +1,62 @@
+@startuml
+class Petshop {
+    -nomeDoPetshop
+}
+
+class Pessoa {
+    -nomeCompleto: String
+    -cpf: string
+    -email: String
+    -password: String
+
+    +alterarDadosPerfil(): void
+}
+
+class Cliente {
+    -telefone: int
+    -bairro: string
+    -endereco: string
+    
+    +cadastrarPet(pet: Pet): void
+    +removerPet(pet: Pet): void
+    +alterarDadosPet(pet: Pet): void
+    +visualizarHorariosDisponiveis(): void
+    +agendarServico(): void
+    +cancelarAgendamento(): void
+    +adicionarProdutoCarrinho(): void
+    +removerProdutoCarrinho(): void
+    +comprarProduto(): void
+    +visualizarMeusPets(): void
+    +adotarPet(): void
+    +avaliarServicos(): void
+}
+
+class Administrador {
+    +excluirProfissional(profissional: Profissional): void
+    +gerarRelatorios(): void
+    +adicionarDuvidasSuporte(): void
+}
+
+class Profissional {
+    -numeroDeIdentificacao: int
+
+    +verificarAgendamentos(): void
+    +acessarRelatorios(): void
+}
+
+class Pet {
+    -nome: String
+    -especie: String
+    -raça: String
+    -dataDeNascimento: Date
+    -idade: int
+    -donoPet: String
+}
+
+Pessoa "1" <|-- "0.. *" Cliente 
+Pessoa "1" <|-- "1.. *" Administrador
+Pessoa "1" <|-- "0.. *" Profissional
+Petshop "1" <-- "0.. *" Pessoa
+Petshop "1" <-- "0.. *" Pet
+
+@enduml
