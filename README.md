@@ -20,6 +20,9 @@ Atualmente, muitos donos de pets enfrentam dificuldades ao interagir com pet sho
 - Incentivar a adoção responsável de animais de rua, conectando potenciais adotantes a pets tratados por profissionais.
 - Garantir a satisfação do cliente através de um suporte eficiente e uma experiência de usuário intuitiva e agradável.
 
+## Vizualização do protótipo
+- **URL para vizualização do protótipo na plataforma Figma:** https://www.figma.com/design/bYtT73q80N39R9n5jAmNFX/petshop?node-id=0-1&node-type=canvas&t=iepp1B97tUcqCerg-0
+
 ## Grupo
 Este projeto será desenvolvido pelos componentes do grupo 9: 
 
@@ -30,9 +33,6 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 | 202403068     | ENZO DE OLIVEIRA MACHADO             | [EnzoMachad0](https://github.com/EnzoMachad0)                 |
 | 202403090     | RAFAEL FERNANDES DA SILVA            | [RafaelFernandes1112](https://github.com/RafaelFernandes1112) | 
 | 202403091     | RODRIGO LUIZ FERREIRA RAMOS          | [rodrigoluizf](https://github.com/rodrigoluizf)               |
-
-## Vizualização do protótipo
-- **URL para vizualização do protótipo na plataforma Figma:** https://www.figma.com/design/bYtT73q80N39R9n5jAmNFX/petshop?node-id=0-1&node-type=canvas&t=iepp1B97tUcqCerg-0
 
 ## Backlog do Produto
 
@@ -117,10 +117,17 @@ A estrutura mais alinhada ao produto final é a do tipo interface para o cliente
 - Camada de Interface (Cliente): A interação com o usuário será implementada utilizando a plataforma Figma.
 
 ## Modelo de Interfaces Gráficas
-<Apresentar uma descrição sucinta do modelo de interfaces gráficas do Produto.>
 
-## Tecnologia de Persistência de Dados
-<Apresentar uma descrição sucinta do modelo de persistência do Produto.>
+O modelo de interfaces gráficas do PetShop é projetado para proporcionar uma experiência de usuário intuitiva e eficiente. As principais interfaces incluem:
+
+1. Tela Inicial: Exibe informações básicas sobre o PetShop, promoções e acesso rápido às principais funcionalidades.
+2. Login e Cadastro: Formulários simples para login e criação de contas de clientes e profissionais.
+3. Perfil de Usuário: Seção onde clientes e profissionais podem visualizar e editar suas informações pessoais e detalhes dos pets.
+4. Agendamento de Serviços: Interface para seleção de serviços, escolha de datas e horários, e confirmação de agendamentos.
+5. Loja de Produtos: Catálogo online com produtos para pets, permitindo adicionar itens ao carrinho e finalizar compras.
+6. Área de Adoção: Exibe animais disponíveis para adoção, com fotos e detalhes de cada pet.
+7. Avaliações e Feedbacks: Área para clientes deixarem avaliações e feedback sobre serviços e produtos.
+8. Suporte ao Cliente: Canal de suporte integrado para resolução de dúvidas e problemas.
 
 ## Local do _Deploy_
 O nosso planejamento inicial é hospedar nossa aplicação na plataforma Figma, sendo crucial para nossa escolha a facilidade de configuração e também os recursos ofertados na versão gratuita.
@@ -134,7 +141,7 @@ O nosso planejamento inicial é hospedar nossa aplicação na plataforma Figma, 
 |3|Itens do backlog <1,2,3>|02/10/2024|15/10/2024|Grupo 09|Concluída|
 |4|Itens do backlog <4,5,6>|23/10/2024|03/11/2024|Grupo 09|Concluída|
 |5|Itens do backlog <7,8,9>|30/10/2024|12/11/2024|Grupo 09|Concluída|
-|6|Apresentação do Projeto|19/11/2024|26/11/2024|Grupo 09|Concluída|
+|6|Apresentação do Projeto|19/11/2024|26/11/2024|Grupo 09|Programada|
 
 ### Iterações x Atividades
 
