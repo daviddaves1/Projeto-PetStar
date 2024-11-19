@@ -1,14 +1,12 @@
 <?php
-$host = "localhost";
-$dbname = "petstar";
-$user = "postgres"; // Substitua por seu usuário real
-$password = "Infinixlima46#"; // Substitua por sua senha real
+include 'configuracao.php';
 
-// Conexão com o PostgreSQL
 $conn = pg_connect("host=$host dbname=$dbname user=$user password=$password");
 
 if (!$conn) {
     die("Erro de conexão: " . pg_last_error());
+} else {
+    echo "Conexão bem-sucedida!<br>";
 }
 
 $query = "SELECT nome, email FROM usuarios";

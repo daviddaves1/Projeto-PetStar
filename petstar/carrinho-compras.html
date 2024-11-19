@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mediaquery.css">
+</head>
+<body>
+    <header>
+        <a href="main-page.php" class="back-arrow">
+            <span class="material-symbols-outlined">west</span>
+        </a>
+        <img src="imagens/img2.png" alt="Imagem da PetStar" id="img-petstar-small">
+        <h1>PetStar - Brilho Animal</h1>
+        <p>Tudo aquilo que você sempre quis sobre os Petshops em um único lugar</p>
+        <div class="user-options">
+            <span class="material-symbols-outlined user-icon" onclick="toggleUserMenu()">settings</span>
+            <div class="user-menu" id="userMenu">
+                <a href="perfil-cliente.html">Perfil</a>
+                <a href="backend/logout.php">Sair</a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <a href="main-page.php">Início</a>
+        <a href="agendar-servico.html">Agendar Serviço</a>
+        <a href="carrinho-compras.html">Carrinho</a>
+        <a href="#">Suporte</a>
+    </nav>
+    <main>
+        <section id="carrinho-compras">
+            <p>Adicionar um produto ao carrinho</p>
+            <form id="form-agendamento" action="backend/carrinho-compras.php" method="post">
+                <label for="produto">Escolha um produto:</label>
+                <select id="produto" name="produto">
+                    <option value="Ração">🍚 Ração</option>
+                    <option value="Coleira">🐕 Coleira</option>
+                    <option value="Casa para Pet">🏠 Casa para Pet</option>
+                </select>
+                <input type="number" id="quantidade" name="quantidade" min="1" placeholder="Quantidade">
+                <button type="button" onclick="adicionarAoCarrinho()">Adicionar ao Carrinho</button>
+            </form>
+            <div id="carrinho">
+                <h2>Seu Carrinho</h2>
+                <ul id="lista-carrinho"></ul>
+            </div>
+            <div id="mensagem-alerta">
+                <!-- Mensagens de sucesso ou erro serão exibidas aqui -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Site Criado por <a href="https://github.com/daviddaves1/ms_20242_g9" target="_blank">Grupo 09</a></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

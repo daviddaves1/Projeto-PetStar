@@ -1,19 +1,56 @@
 @charset "UTF-8";
 
+@media (max-width: 768px) {
+    /* Configuração para  */
+
+    #div-main-index > div, 
+    #section-produtos-destaque div div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #section-depoimentos blockquote {
+        width: 100%;
+    }
+
+    #section-agendamento-carrinho {
+        padding: 15px;
+        margin: 0px;
+    }
+
+    #section-agendamento-carrinho h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #section-agendamento-carrinho h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #section-agendamento-carrinho p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 12px;
+    }
+
+    #section-agendamento-carrinho ul li {
+        font-size: 15px;
+        padding: 10px;
+        margin-bottom: 6px;
+    }
+
+    #section-agendamento-carrinho ul li::before {
+        margin-right: 8px;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
     /* Configuração para tablet */
-    :root {
-        --cor0: #113e00;
-        --cor1: #098000;
-        --cor2: #cf9100;
-        --cor3: #1119AA;
-        --cor4: #b9b922;
-        --cor5: rgb(183, 255, 0);
-        --cor6: rgb(99, 74, 0);
-    }
+
     .autenticacao-usuario {
         width: 90vw;
-        height: 410px;
+        height: 450px;
     }
     .autenticacao-usuario > #imagem {
         float: left;
@@ -38,18 +75,10 @@
 
 @media screen and (min-width: 992px) {
     /* Configurações para desktop */
-    :root {
-        --cor0: #113e00;
-        --cor1: #098000;
-        --cor2: #cf9100;
-        --cor3: #1119AA;
-        --cor4: #b9b922;
-        --cor5: rgb(183, 255, 0);
-        --cor6: rgb(99, 74, 0);
-    }
+
     .autenticacao-usuario {
-        width: 950px;
-        height: 450px;
+        width: 70vw;
+        height: 480px;
     }
     .autenticacao-usuario > #imagem {
         float: right;
@@ -69,5 +98,9 @@
     }
     form > input[type=submit] {
         margin-top: 1.7em;
+    }
+
+    p, h1, h2, h3, h4{
+        margin: auto 10%;
     }
 }
