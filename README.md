@@ -1,4 +1,4 @@
-# 🌟 **Projeto-PetStar** 🌟
+# 🌟 **Projeto-PetStar** 🌟  
 
 ## ms_20242_g9
 Repositório definido para a manutenção do controle de versão dos artefatos do projeto do Grupo 9, da disciplina de Modelagem de Software, no semestre 2024-2.
@@ -50,9 +50,9 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 
 - **1. RF001** - O sistema deve permitir a criação de conta para clientes.
 - **2. RF002** - O sistema deve possuir um perfil de usuário com opções de edição, disponível para clientes e profissionais.
-- **3. RF003** - O sistema deve permitir que o cliente exclua a sua conta de forma permanente, sendo essa destinada somente ao cliente.
-- **4. RF004** - O sistema deve permitir o agendamento de serviços de tosa, banho, natação, adestramento e passeio para pets, sendo essa função disponível apenas aos clientes.
-- **5. RF005** - O sistema deve possuir uma área para visualização de serviços agendados, disponível para clientes e profissionais.
+- **3. RF003** - O sistema deve permitir que o cliente exclua a sua conta de forma permanente.
+- **4. RF004** - O sistema deve permitir o agendamento de serviços de tosa, banho e passeio para pets.
+- **5. RF005** - O sistema deve possuir uma área para visualização de horários disponíveis para agendamento de serviços, acessível para clientes e profissionais.
 - **6. RF006** - O sistema deve permitir a compra de produtos relacionados aos cuidados animais e direcionar esses produtos para o carrinho de compras, estando essa disponível apenas para clientes.
 - **7. RF007** - O sistema deve permitir a adição de produtos ao estoque da loja, estando essa funcionalidade disponível apenas para administradores.
 - **8. RF008** - O sistema deve oferecer uma área que permita a adoção de animais resgatados em situação de rua, abandono, maus-tratos ou ferimentos, devidamente tratados por profissionais de medicina veterinária.
