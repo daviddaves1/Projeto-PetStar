@@ -86,7 +86,6 @@ Este projeto será desenvolvido pelos componentes do grupo 9:
 - **10. RNF011** - O sistema deve ser auditável, permitindo o rastreamento de ações dos usuários e alterações nos dados.
 - **11. RNF013** - O sistema deve usar protocolos de segurança para proteger informações pessoais e transações de pagamento, como HTTPS e SSL.
 - **12. RNF015** - O sistema deve gerar relatórios de forma otimizada para minimizar o tempo de espera dos administradores.
-
 - **13. RNF013** - O sistema deve garantir um tempo de resposta de no máximo 12 segundos para operações críticas, como agendamento de serviços e compras.
 - **14. RNF014** - O sistema deve realizar backups automáticos dos dados diariamente para garantir a recuperação em caso de falha.
 - **15. RNF015** - O sistema deve ser acessível a usuários com deficiências, seguindo as diretrizes do WCAG (Web Content Accessibility Guidelines).
