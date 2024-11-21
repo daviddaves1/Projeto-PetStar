@@ -140,7 +140,7 @@ O nosso planejamento inicial é hospedar nossa aplicação na plataforma Figma, 
 |3|Itens do backlog <1,2,3>|02/10/2024|15/10/2024|Grupo 09|Concluída|
 |4|Itens do backlog <4,5,6>|23/10/2024|03/11/2024|Grupo 09|Concluída|
 |5|Itens do backlog <7,8,9>|30/10/2024|12/11/2024|Grupo 09|Concluída|
-|6|Apresentação do Projeto|19/11/2024|26/11/2024|Grupo 09|Programada|
+|6|Apresentação do Projeto|19/11/2024|26/11/2024|Grupo 09|Concluída|
 
 ### Iterações x Atividades
 
@@ -164,4 +164,4 @@ O nosso planejamento inicial é hospedar nossa aplicação na plataforma Figma, 
 | 5        | Projeto de Interfaces gráficas dos itens do backlog <7,8,9>  | 07/11/2024  | 15/11/2024 | Grupo 09    | Concluída                |
 | 5        | Projeto de persistência dos itens do backlog <7,8,9>         | 10/11/2024  | 17/11/2024 | Grupo 09    | Concluída                |
 | 5        | Implementação dos itens do backlog <7,8,9>                   | 10/11/2024  | 17/11/2024 | Grupo 09    | Concluída                |
-| 6        | Apresentação do Projeto                                      | 19/11/2024  | 26/11/2024 | Grupo 09    | Programada               |
+| 6        | Apresentação do Projeto                                      | 19/11/2024  | 26/11/2024 | Grupo 09    | Concluída                |
