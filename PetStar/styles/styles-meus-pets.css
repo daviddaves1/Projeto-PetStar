@@ -1,0 +1,128 @@
+:root {
+    --cor0: #113e00;
+    --cor1: #098000;
+    --cor2: #cf9100;
+    --cor3: #1119AA;
+    --cor4: #8e8e00;
+    --cor5: #b7ff00;
+    --cor6: #634a00;
+    --cor7: #c10000;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, var(--cor5), var(--cor4));
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 880px;
+    background-color: #f9f3a7;
+    color: black;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    min-height: 60vh;
+    max-height: 80vh;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    padding-right: 0px;
+  }
+  
+  .back-button img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  h1 {
+    font-size: 27px;
+    color: black;
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  /* Estilos para a barra de pesquisa e o ícone dentro do campo */
+  .search-bar {
+    position: relative;
+    width: 85%;
+    max-width: 880px;
+    margin: 0 auto 10px auto;
+  }
+  
+  #searchInput {
+    width: 100%;
+    padding: 10px 40px 10px 20px; /* Espaço para o ícone */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-bar img {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .selected-pet-name {
+    text-align: center;
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .pet-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+  }
+  
+  .pet-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff7b2;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    font-size: 18px;
+  }
+  
+  .pet-item img.pet-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+  }
+  
+  .pet-item p {
+    margin: 0;
+  }

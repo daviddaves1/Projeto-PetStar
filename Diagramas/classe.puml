@@ -1,0 +1,86 @@
+@startuml
+class Petshop {
+    -nomeDoPetshop: String
+}
+
+class Pessoa {
+    -nomeCompleto: String
+    -cpf: String
+    -email: String
+    -password: String
+
+    +alterarDadosPerfil(): void
+}
+
+class Cliente {
+    -telefone: int
+    -bairro: String
+    -endereco: String
+    
+    +cadastrarPet(pet: Pet): void
+    +removerPet(pet: Pet): void
+    +alterarDadosPet(pet: Pet): void
+    +visualizarHorariosDisponiveis(): void
+    +agendarServico(): void
+    +cancelarAgendamento(): void
+    +comprarProduto(): void
+    +visualizarMeusPets(): void
+    +adotarPet(): void
+    +avaliarServicos(): void
+}
+
+class Administrador {
+    +adicionarProfissional(profissional: Profissional): void
+    +excluirProfissional(profissional: Profissional): void
+    +gerarRelatorios(): void
+    +adicionarDuvidasSuporte(): void
+    +adicionarProduto(produto: Produto): void
+}
+
+class Profissional {
+    -numeroDeIdentificacao: int
+
+    +verificarAgendamentos(): void
+    +acessarRelatorios(): void
+    +adicionarPetAdocao(): void
+}
+
+class Pet {
+    -nome: String
+    -especie: String
+    -raça: String
+    -dataDeNascimento: Date
+    -idade: int
+    -donoPet: String
+}
+
+class Produto {
+    -nome: String
+    -preco: Float
+}
+
+class Carrinho {
+    +adicionarProduto(produto: Produto): void
+    +removerProduto(produto: Produto): void
+}
+
+class Compra {
+    -valorDoProduto: Float
+    -enderecoDoCliente: String
+    -valorFrete: Float
+    
+    +realizarPagamento(): Boolean
+}
+
+Pessoa "1" <|-- "0.. *" Cliente 
+Pessoa "1" <|-- "1.. *" Administrador
+Pessoa "1" <|-- "0.. *" Profissional
+Petshop "1" <-- "1.. *" Pessoa
+Petshop "1" <-- "0.. *" Pet
+Petshop "1" <-- "1.. *" Produto
+Cliente "1" <-- "1" Carrinho
+Cliente "1" <-- "0.. *" Compra
+Compra "1" <-- "1" Carrinho
+Cliente "1" <-- "0..*" Pet : "possui"
+
+@enduml
